@@ -1,0 +1,95 @@
+// Parametry kasety
+outer_diameter = 110;
+inner_diameter = 80;
+outer_radius = outer_diameter / 2;
+inner_radius = inner_diameter / 2;
+height = 15;
+bottom_thickness = 5;
+reduction_height = 8;
+reduced_outer_diameter = 86;
+reduced_outer_radius = reduced_outer_diameter / 2;
+wall_thickness = outer_radius - inner_radius;
+reduced_inner_radius = reduced_outer_radius - wall_thickness;
+hole_diameter = 2;
+hole_radius = hole_diameter / 2;
+hole_radius_from_center = outer_radius - 5;
+num_holes = 4;
+
+// Główna kaseta
+difference() {
+    // Część zewnętrzna
+    union() {
+        // Cylinder dolny (stała średnica)
+        cylinder(h = height - reduction_height, r = outer_radius, center = false);
+        
+        // Część ze zmniejszoną średnicą (skokowo)
+        translate([0, 0, height - reduction_height])
+            cylinder(h = reduction_height, r = reduced_outer_radius, center = false);
+    }
+    
+    // Wyjęcie wewnętrzne (wnęka)
+    translate([0, 0, bottom_thickness])
+        cylinder(h = height - bottom_thickness, r = inner_radius, center = false);
+    
+    // Cztery otwory rozmieszczone równomiernie
+    for (i = [0:num_holes-1]) {
+        angle = i * 360 / num_holes;
+        translate([hole_radius_from_center * cos(angle), hole_radius_from_center * sin(angle), -0.5])
+            cylinder(h = height + 1, r = hole_radius, center = false);
+    }
+}
+
+// Parametry pokrywki
+cover_outer_diameter = 110;
+cover_outer_radius = cover_outer_diameter / 2;
+cover_inner_diameter = 91;  // 86 + 5 = 91
+cover_inner_radius = cover_inner_diameter / 2;
+cover_top_thickness = 3;
+cover_inner_depth = 10.5;
+cover_total_height = cover_top_thickness + cover_inner_depth;
+cover_hole_diameter = 4;
+cover_hole_radius = cover_hole_diameter / 2;
+countersink_diameter = 7;
+countersink_radius = countersink_diameter / 2;
+countersink_depth = 2;
+top_hole_diameter = 80;
+top_hole_radius = top_hole_diameter / 2;
+cover_hole_radius_from_center = 50;
+
+// Pokrywka
+translate([0, 120, 0]) {
+    difference() {
+        // Część stała pokrywki
+        union() {
+            // Górna część (płaska)
+            cylinder(h = cover_top_thickness, r = cover_outer_radius, center = false);
+            
+            // Dolna część (ścianki)
+            translate([0, 0, cover_top_thickness])
+                cylinder(h = cover_inner_depth, r = cover_outer_radius, center = false);
+        }
+        
+        // Wewnętrzna wnęka
+        translate([0, 0, cover_top_thickness])
+            cylinder(h = cover_inner_depth, r = cover_inner_radius, center = false);
+        
+        // Okrągły otwór z góry (80mm)
+        translate([0, 0, -0.5])
+            cylinder(h = cover_top_thickness + 1, r = top_hole_radius, center = false);
+        
+        // Cztery otwory do wkrętów
+        for (i = [0:num_holes-1]) {
+            angle = i * 360 / num_holes;
+            x = cover_hole_radius_from_center * cos(angle);
+            y = cover_hole_radius_from_center * sin(angle);
+            
+            // Otwór główny: 4mm średnicy na większości długości
+            translate([x, y, 0])
+                cylinder(h = cover_total_height, r = cover_hole_radius, center = false);
+            
+            // Pogłębienie stożkowe: na ostatnich 2.5mm zmienia się od 4mm do 7mm
+            translate([x, y, 0])
+                cylinder(h = 2.5, r1 = countersink_radius, r2 = cover_hole_radius, center = false);
+        }
+    }
+}
