@@ -113,7 +113,8 @@ Szósta planeta od Słońca, słynna z widocznego systemu pierścieni. Jest gazo
 - Masa: 5,683 × 10²⁶ kg
 - Odległość od Słońca: 1 433 530 000 km (9,58 AU)
 - Okres orbitalny: 29,45 lat
-- Średnica pierścieni: 160 000 km
+- Pierścienie rozciągają się na odległość 120 700 km od równika
+- Średnica pierścieni: 357 860 km (uwzględniając średnicę planety)
 
 ### Uran
 Siódma planeta od Słońca, charakteryzująca się bardzo dużym pochyleniem osi obrotu - 82° do płaszczyzny orbity.
