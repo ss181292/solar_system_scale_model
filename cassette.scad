@@ -3,10 +3,10 @@ outer_diameter = 110;
 inner_diameter = 80;
 outer_radius = outer_diameter / 2;
 inner_radius = inner_diameter / 2;
-height = 15;
+height = 20;
 bottom_thickness = 5;
-reduction_height = 8;
-reduced_outer_diameter = 86;
+reduction_height = 13;
+reduced_outer_diameter = 86.5;
 reduced_outer_radius = reduced_outer_diameter / 2;
 wall_thickness = outer_radius - inner_radius;
 reduced_inner_radius = reduced_outer_radius - wall_thickness;
@@ -42,10 +42,10 @@ difference() {
 // Parametry pokrywki
 cover_outer_diameter = 110;
 cover_outer_radius = cover_outer_diameter / 2;
-cover_inner_diameter = 91;  // 86 + 5 = 91
+cover_inner_diameter = 92;
 cover_inner_radius = cover_inner_diameter / 2;
 cover_top_thickness = 3;
-cover_inner_depth = 10.5;
+cover_inner_depth = 15;
 cover_total_height = cover_top_thickness + cover_inner_depth;
 cover_hole_diameter = 4;
 cover_hole_radius = cover_hole_diameter / 2;
