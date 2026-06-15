@@ -27,6 +27,25 @@ translate([17, 17, base_thickness])
             linear_extrude(height = 1)
                 text("♀", size = 10, halign = "center", valign = "center", font = "DejaVu Sans");
 
+// Strzałka wskazująca model - czarna, dla planet o średnicy < 4mm
+arrow_length = 14;
+arrow_shaft_width = 3;
+arrow_head_length = 4;
+arrow_head_width = 6;
+translate([-13, -13, base_thickness])
+    rotate([0, 0, 45])
+        color(color_black)
+            linear_extrude(height = orbit_height)
+                polygon(points = [
+                    [0, -arrow_shaft_width / 2],
+                    [0, arrow_shaft_width / 2],
+                    [arrow_length - arrow_head_length, arrow_shaft_width / 2],
+                    [arrow_length - arrow_head_length, arrow_head_width / 2],
+                    [arrow_length, 0],
+                    [arrow_length - arrow_head_length, -arrow_head_width / 2],
+                    [arrow_length - arrow_head_length, -arrow_shaft_width / 2]
+                ]);
+
 // Planeta (kula) - wystaje 75% średnicy powyżej podstawy, ścięta poniżej dna podstawy
 planet_center_z = base_thickness + 0.25 * planet_diameter;
 color(color_venus)
