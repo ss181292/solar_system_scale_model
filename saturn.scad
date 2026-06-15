@@ -58,7 +58,7 @@ translate([19, 19, base_thickness])
                 text("♄", size = 10, halign = "center", valign = "center", font = "DejaVu Sans");
 
 // Planeta (kula) + pierścienie - wystają 75% średnicy planety powyżej podstawy, ścięte poniżej dna podstawy
-planet_center_z = base_thickness + 0.25 * planet_diameter;
+planet_center_z = base_thickness + 0.40 * planet_diameter;
 color(color_saturn)
     intersection() {
         union() {

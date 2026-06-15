@@ -23,7 +23,7 @@ color(color_white)
 symbol_width = 11;
 translate([17, 17, base_thickness])
     color(color_black)
-        resize([symbol_width, symbol_width, orbit_height], auto = [false, false, false])
+        resize([symbol_width*0.75, symbol_width, orbit_height], auto = [false, false, false])
             linear_extrude(height = 1)
                 text("♀", size = 10, halign = "center", valign = "center", font = "DejaVu Sans");
 
