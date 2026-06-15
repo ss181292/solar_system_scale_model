@@ -49,6 +49,14 @@ for (moon = moons) {
             }
 }
 
+// Symbol astronomiczny - czarny, szerokość 11mm, w prawym górnym rogu podstawy
+symbol_width = 11;
+translate([19, 19, base_thickness])
+    color(color_black)
+        resize([symbol_width, symbol_width, orbit_height], auto = [false, false, false])
+            linear_extrude(height = 1)
+                text("♄", size = 10, halign = "center", valign = "center", font = "DejaVu Sans");
+
 // Planeta (kula) + pierścienie - wystają 75% średnicy planety powyżej podstawy, ścięte poniżej dna podstawy
 planet_center_z = base_thickness + 0.25 * planet_diameter;
 color(color_saturn)
