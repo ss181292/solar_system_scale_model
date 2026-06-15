@@ -8,7 +8,6 @@
 
 ## Model w skali 1:10¹⁰
 - **Reprezentacja:** rozciągnięty pas między Marsem a Jowiszem
-- **Kolor:** SUNLU PETG Coffee Brown
 
 ## Znajdujące się tu obiekty
 - **Ceres** - planeta karłowata (główny obiekt w pasie)

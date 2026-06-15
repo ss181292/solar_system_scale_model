@@ -10,7 +10,6 @@
 ## Model w skali 1:10¹⁰
 - **Wymiary modelu:** 11,65 mm
 - **Pierścienie:** średnica 35,79 mm
-- **Kolor:** SUNLU PETG Lemon Yellow
 
 ## Księżyce widoczne na podstawie
 - **Titan** - największy księżyc Saturna z atmosferą

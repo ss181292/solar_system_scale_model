@@ -7,7 +7,6 @@
 
 ## Model w skali 1:10¹⁰
 - **Wymiary modelu:** 139,1 mm
-- **Kolor:** SUNLU PETG Sunny Orange
 
 ## Rola w Układzie
 Gwiazda będąca centrum Układu Słonecznego. Zawiera 99,86% całej masy systemu. Energia Słońca powstaje w wyniku fuzji jądrowej wodoru w hel.

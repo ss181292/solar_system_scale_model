@@ -8,7 +8,6 @@
 
 ## Model w skali 1:10¹⁰
 - **Wymiary modelu:** 1,21 mm
-- **Kolor:** SUNLU PETG Lemon Yellow
 
 ## Księżyce
 Brak

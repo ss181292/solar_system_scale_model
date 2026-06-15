@@ -8,7 +8,6 @@
 
 ## Model w skali 1:10¹⁰
 - **Wymiary modelu:** 0,68 mm
-- **Kolor:** SUNLU PETG Red
 
 ## Księżyce
 - **Fobos** - widoczny na podstawie modelu

@@ -8,7 +8,6 @@
 
 ## Model w skali 1:10¹⁰
 - **Wymiary modelu:** 4,92 mm
-- **Kolor:** SUNLU PETG Blue (Klein Blue)
 
 ## Księżyce widoczne na podstawie
 - **Tryton** - największy księżyc, widoczny na podstawie

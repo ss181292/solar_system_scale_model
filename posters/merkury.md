@@ -8,7 +8,6 @@
 
 ## Model w skali 1:10¹⁰
 - **Wymiary modelu:** 0,49 mm
-- **Kolor:** SUNLU PETG Grey
 
 ## Księżyce
 Brak

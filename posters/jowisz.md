@@ -8,7 +8,6 @@
 
 ## Model w skali 1:10¹⁰
 - **Wymiary modelu:** 13,98 mm
-- **Kolor:** SUNLU PETG Chocolate
 
 ## Księżyce widoczne na podstawie
 - **Io** - wulkaniczny księżyc, znajduje się najbliżej Jowisza

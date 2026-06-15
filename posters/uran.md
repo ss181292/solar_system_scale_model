@@ -8,7 +8,6 @@
 
 ## Model w skali 1:10¹⁰
 - **Wymiary modelu:** 5,07 mm
-- **Kolor:** SUNLU PETG Cyan
 
 ## Księżyce widoczne na podstawie
 - **Ariel** - widoczny na podstawie

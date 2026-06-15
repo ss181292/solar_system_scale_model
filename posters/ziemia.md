@@ -8,7 +8,6 @@
 
 ## Model w skali 1:10¹⁰
 - **Wymiary modelu:** 1,28 mm
-- **Kolor:** SUNLU PETG Sky Blue
 
 ## Księżyce
 - **Księżyc** - widoczny na podstawie modelu
