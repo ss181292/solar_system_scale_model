@@ -8,8 +8,8 @@ planet_diameter = 1.28;
 planet_radius = planet_diameter / 2;
 base_diameter = 78;
 base_thickness = 1;
-orbit_line_width = 0.2;
-orbit_height = 0.2;
+orbit_line_width = 0.5;
+orbit_height = 0.4;
 
 // Kolor Sky Blue
 color_earth = [135/255, 206/255, 235/255];
