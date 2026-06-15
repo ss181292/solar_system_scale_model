@@ -1,0 +1,523 @@
+/* ==========================================
+   Styles for Solar System Scale Model
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e0e0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* ==========================================
+   Header & Navigation
+   ========================================== */
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 3px solid #ffd700;
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    text-align: center;
+    color: #ffd700;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    text-align: center;
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #ffd700;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: #ffd700;
+    color: #1a1a2e;
+    transform: scale(1.05);
+}
+
+/* ==========================================
+   Main Container
+   ========================================== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* ==========================================
+   Hero Section (Index Page)
+   ========================================== */
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: rgba(255, 215, 0, 0.05);
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #d0d0d0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   Planet Grid (Index Page)
+   ========================================== */
+
+.planets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.planet-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.planet-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffd700;
+    box-shadow: 0 8px 16px rgba(255, 215, 0, 0.2);
+}
+
+.planet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.planet-card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.planet-card h3 {
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.planet-card p {
+    font-size: 0.95rem;
+    color: #b0b0b0;
+    flex-grow: 1;
+}
+
+/* ==========================================
+   Planet Detail Page
+   ========================================== */
+
+.planet-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .planet-header {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.planet-image {
+    flex: 1;
+    max-width: 400px;
+    width: 100%;
+}
+
+.planet-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+.planet-info {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.planet-info h1 {
+    color: #ffd700;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.planet-info p {
+    color: #d0d0d0;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   Facts Section
+   ========================================== */
+
+.facts-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #ffd700;
+    margin-bottom: 2rem;
+}
+
+.facts-section h2 {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.fact {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.fact-label {
+    color: #ffd700;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.fact-value {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* ==========================================
+   Model Section
+   ========================================== */
+
+.model-section {
+    background: rgba(100, 149, 237, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #6495ed;
+    margin-bottom: 2rem;
+}
+
+.model-section h2 {
+    color: #6495ed;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.model-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.model-detail {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid rgba(100, 149, 237, 0.3);
+}
+
+.model-detail h3 {
+    color: #6495ed;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+}
+
+.model-value {
+    color: #e0e0e0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #999;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* ==========================================
+   Tables
+   ========================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+table thead {
+    background: rgba(255, 215, 0, 0.15);
+}
+
+table th {
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffd700;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.4);
+}
+
+table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+
+table tr:hover {
+    background: rgba(255, 215, 0, 0.05);
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+/* ==========================================
+   Moons Section
+   ========================================== */
+
+.moons-section {
+    margin-top: 2rem;
+}
+
+.moons-section h2 {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.moons-section h3 {
+    color: #b0b0b0;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.moons-table {
+    margin-bottom: 2rem;
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #ffd700;
+    padding: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+footer p {
+    color: #b0b0b0;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffed4e;
+    text-decoration: underline;
+}
+
+/* ==========================================
+   Links
+   ========================================== */
+
+a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffed4e;
+    text-decoration: underline;
+}
+
+/* ==========================================
+   Back to Index Link
+   ========================================== */
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background: rgba(255, 215, 0, 0.2);
+    border-color: #ffd700;
+    transform: translateX(-4px);
+}
+
+/* ==========================================
+   Responsive Design
+   ========================================== */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .model-info {
+        grid-template-columns: 1fr;
+    }
+
+    .planet-header {
+        flex-direction: column;
+    }
+
+    .planet-info {
+        padding: 0;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    table th,
+    table td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    nav {
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    .planet-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .fact-value {
+        font-size: 1rem;
+    }
+
+    .model-value {
+        font-size: 1.1rem;
+    }
+}

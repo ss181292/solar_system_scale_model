@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars - Model Układu Słonecznego</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mars</h1>
+        <p>Czwarta planeta od Słońca - Czerwona Planeta</p>
+        <nav>
+            <a href="index.html">← Powrót do strony głównej</a>
+        </nav>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-link">← Powrót do listy planet</a>
+
+        <section class="planet-header">
+            <div class="planet-image">
+                <img src="images/mars.jpg" alt="Mars">
+            </div>
+            <div class="planet-info">
+                <h1>Mars</h1>
+                <p>
+                    Mars to czwarta planeta od Słońca, znana jako "Czerwona Planeta" ze względu na wysoką zawartość
+                    oksydów żelaza na jej powierzchni. Mars fascynuje naukowców możliwością, że kiedyś mogła na niej istnieć woda
+                    i potencjalnie życie. Dzisiaj jest głównym celem misji kosmicznych w poszukiwaniu śladów przeszłego życia.
+                </p>
+            </div>
+        </section>
+
+        <section class="facts-section">
+            <h2>📊 Podstawowe Dane Astronomiczne</h2>
+            <div class="facts-grid">
+                <div class="fact">
+                    <div class="fact-label">Średnica</div>
+                    <div class="fact-value">6 779 km</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-label">Masa</div>
+                    <div class="fact-value">6,417 × 10²³ kg</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-label">Odległość od Słońca</div>
+                    <div class="fact-value">227 923 366 km</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-label">Okres orbitalny</div>
+                    <div class="fact-value">687 dni</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-label">Liczba księżyców</div>
+                    <div class="fact-value">2 (Fobos i Deimos)</div>
+                </div>
+                <div class="fact">
+                    <div class="fact-label">Średnia temperatura powierzchni</div>
+                    <div class="fact-value">-65°C</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="model-section">
+            <h2>🎨 Model w Skali 1:10¹⁰</h2>
+            <div class="model-info">
+                <div class="model-detail">
+                    <h3>Średnica modelu</h3>
+                    <div class="model-value">0,68 mm</div>
+                </div>
+                <div class="model-detail">
+                    <h3>Odległość od Słońca na modelu</h3>
+                    <div class="model-value">22,79 m</div>
+                </div>
+                <div class="model-detail">
+                    <h3>Kolor filamentu</h3>
+                    <div class="model-value">
+                        <span class="color-box" style="background-color: #FF0000;"></span>
+                        PETG Red
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="moons-section">
+            <h2>🌙 Księżyce Marsa</h2>
+            <table class="moons-table">
+                <thead>
+                    <tr>
+                        <th>Księżyc</th>
+                        <th>Średnica orbity rzeczywista (km)</th>
+                        <th>Średnica orbity na modelu (mm)</th>
+                        <th>Status na modelu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fobos</td>
+                        <td>9 376</td>
+                        <td>1,88</td>
+                        <td style="color: #90EE90;"><strong>✓ Mieści się na podstawie</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Deimos</td>
+                        <td>23 463</td>
+                        <td>4,69</td>
+                        <td style="color: #90EE90;"><strong>✓ Mieści się na podstawie</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Mars ma dwóch małych księżyców. Fobos i Deimos to wyjątkowo małe księżyce, nazwane od imion
+                greckich bogów strachu i paniki. Oba księżyce mieszczą się na podstawie modelu Marsa,
+                ponieważ ich średnice orbit są mniejsze niż 78 mm.
+            </p>
+        </section>
+
+        <section class="moons-section">
+            <h2>📖 Ciekawostki</h2>
+            <ul style="margin-left: 2rem; color: #d0d0d0;">
+                <li>Mars ma największą górę w Układzie Słonecznym - Olympus Mons (21 km wysoka)</li>
+                <li>Kanion Valles Marineris na Marsie jest 4 razy głębszy i 4 razy szerszy niż Wielki Kanion na Ziemi</li>
+                <li>Marsjańska atmosfera jest 100 razy rzadsza niż ziemska i składa się głównie z CO₂</li>
+                <li>Fobos porusza się szybciej niż obraca się Mars - za kilkaset milionów lat upadnie na Marsa</li>
+                <li>Nazwę zawdzięcza rzymskiemu bogu wojny</li>
+                <li>Na Marsie padają burze pyłu mogące trwać miesiące i pokrywające całą planetę</li>
+            </ul>
+        </section>
+
+        <section class="moons-section">
+            <h2>🔗 Dowiedz się więcej</h2>
+            <p>
+                <a href="https://pl.wikipedia.org/wiki/Mars" target="_blank">Przeczytaj więcej na polskiej Wikipedii</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dane źródłowe: facts.md, solar_system_model_data.md, <a href="https://pl.wikipedia.org/wiki/Mars" target="_blank">Wikipedia</a></p>
+        <p>Zdjęcie: NASA / Viking 1 Probe</p>
+        <p><a href="index.html">← Powrót do strony głównej</a></p>
+    </footer>
+</body>
+</html>
