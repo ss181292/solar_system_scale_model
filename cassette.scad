@@ -22,6 +22,12 @@ vent_rings = 5;
 vent_holes_per_ring = 20;
 vent_max_radius = inner_radius - 4;
 
+// Parametry rowków
+groove_count = 5;
+groove_width = 2;
+groove_depth = 1;
+groove_angle_offset = 45;
+
 // Parametry wypustek
 bump_per_ring = 5;
 bump_height = 1;
@@ -51,6 +57,14 @@ difference() {
         angle = i * 360 / num_holes;
         translate([hole_radius_from_center * cos(angle), hole_radius_from_center * sin(angle), -0.5])
             cylinder(h = height + 1, r = hole_radius, center = false);
+    }
+
+    // Rowki na górnej powierzchni dolnej części kasety (pierścieniowy stopień)
+    for (i = [0:groove_count-1]) {
+        angle = i * 360 / groove_count + groove_angle_offset;
+        rotate([0, 0, angle])
+            translate([reduced_outer_radius, -groove_width/2, height - reduction_height - groove_depth])
+                cube([outer_radius - reduced_outer_radius + 1, groove_width, groove_depth + 0.5]);
     }
 
     // Otwory wentylacyjne - pionowe, przez dno kasety (~100 otworów)
