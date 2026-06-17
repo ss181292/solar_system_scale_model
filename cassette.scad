@@ -22,6 +22,14 @@ vent_rings = 5;
 vent_holes_per_ring = 20;
 vent_max_radius = inner_radius - 4;
 
+// Parametry wypustek
+bump_per_ring = 5;
+bump_height = 1;
+bump_base_radius = 1.5;
+bump_ring_radius_1 = 12;
+bump_ring_radius_2 = 26;
+bump_angle_offset = 9;
+
 // Główna kaseta
 difference() {
     // Część zewnętrzna
@@ -54,6 +62,15 @@ difference() {
                 cylinder(h = bottom_thickness + 1, r = vent_hole_radius, center = false);
         }
     }
+}
+
+// Wypustki wewnątrz kasety (na dnie wnęki, wyrastające w górę, dwa okręgi)
+for (i = [0:bump_per_ring-1]) {
+    angle = i * 360 / bump_per_ring + bump_angle_offset;
+    translate([bump_ring_radius_1 * cos(angle), bump_ring_radius_1 * sin(angle), bottom_thickness])
+        cylinder(h = bump_height, r = bump_base_radius, center = false);
+    translate([bump_ring_radius_2 * cos(angle), bump_ring_radius_2 * sin(angle), bottom_thickness])
+        cylinder(h = bump_height, r = bump_base_radius, center = false);
 }
 
 // Parametry pokrywki
