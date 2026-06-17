@@ -15,6 +15,13 @@ hole_radius = hole_diameter / 2;
 hole_radius_from_center = outer_radius - 5;
 num_holes = 4;
 
+// Parametry otworów wentylacyjnych
+vent_hole_diameter = 1;
+vent_hole_radius = vent_hole_diameter / 2;
+vent_rings = 5;
+vent_holes_per_ring = 20;
+vent_max_radius = inner_radius - 4;
+
 // Główna kaseta
 difference() {
     // Część zewnętrzna
@@ -36,6 +43,16 @@ difference() {
         angle = i * 360 / num_holes;
         translate([hole_radius_from_center * cos(angle), hole_radius_from_center * sin(angle), -0.5])
             cylinder(h = height + 1, r = hole_radius, center = false);
+    }
+
+    // Otwory wentylacyjne - pionowe, przez dno kasety (~100 otworów)
+    for (ring = [1:vent_rings]) {
+        ring_radius = ring * vent_max_radius / vent_rings;
+        for (hole = [0:vent_holes_per_ring-1]) {
+            angle = hole * 360 / vent_holes_per_ring;
+            translate([ring_radius * cos(angle), ring_radius * sin(angle), -0.5])
+                cylinder(h = bottom_thickness + 1, r = vent_hole_radius, center = false);
+        }
     }
 }
 
