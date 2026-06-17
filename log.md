@@ -57,3 +57,34 @@
 - Eris: odległość zmieniona z 9 616 000 000 na 10 126 000 000 km
 - Makemake: odległość zmieniona z 6 849 000 000 na 6 806 600 000 km
 - Haumea: średnica zmieniona z 2 100 na 1 544 km, odległość zmieniona z 6 452 000 000 na 6 450 100 000 km
+
+### 11. Rozbudowa modeli OpenSCAD o symbole astronomiczne i strzałki
+- Dodane symbole astronomiczne (☿♀♁♂♃♄♅♆) do wszystkich 8 modeli planet
+- Symbole koloru czarnego, szerokości 11mm, umieszczone w rogu podstawy
+- Dodane czarne strzałki dla planet o średnicy < 4mm (Merkury, Wenus, Ziemia, Mars)
+- Naprawiono kodowanie znaków w plikach OpenSCAD
+
+### 12. Wygenerowanie statycznej witryny internetowej
+- Utworzone 18 stron HTML (8 planet + Słońce + pas planetoid + 5 planet karłowatych)
+- index.html ze stronami główną z listą wszystkich obiektów
+- Każda strona zawiera: zdjęcie, dane astronomiczne, informacje o modelu, księżyce, link do Wikipedii
+- Pobrano zdjęcia planet z Wikimedia Commons
+- Stworzono wspólny plik CSS (styles.css) z responsywnym designem
+- Katalog: webcontent/
+
+### 13. Wygenerowanie tabliczek informacyjnych (pliki Markdown)
+- Utworzone 15 plików .md dla wszystkich obiektów (8 planet + Słońce + pas planetoid + 5 planet karłowatych)
+- Każdy plik zawiera: dane astronomiczne, wymiary modelu, księżyce, ciekawostkę
+- Przeznaczone dla wydruku jako tabliczki informacyjne przy modelach
+- Katalog: posters/
+
+### 14. Usunięcie informacji o filamentach
+- Usunięto dane o kolorach SUNLU PET-G z wszystkich stron HTML
+- Usunięto dane o filamentach z wszystkich plików Markdown
+- Zachowano wszystkie dane astronomiczne i informacje o modelach
+
+### 15. Naprawy i optymalizacje
+- Naprawiono odnośnik do zdjęcia Neptuna (neptun.jpg → neptun.png)
+- Zaktualizowano index.html o sekcje: Słońce, Pas planetoid, Planety karłowate
+- Połączono strony planet karłowatych w hierarchii navigacji
+- Wszystkie pliki zakodowane w UTF-8
