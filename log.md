@@ -88,3 +88,8 @@
 - Zaktualizowano index.html o sekcje: Słońce, Pas planetoid, Planety karłowate
 - Połączono strony planet karłowatych w hierarchii navigacji
 - Wszystkie pliki zakodowane w UTF-8
+
+### 16. Usunięcie symboli astronomicznych z modeli
+- Usunięte symbole astronomiczne ze wszystkich 8 modeli planet
+- Usunięte z plików: mercury.scad, venus.scad, earth.scad, mars.scad, jupiter.scad, saturn.scad, neptune.scad, uranus.scad
+- Symbole były umieszczone w prawym górnym rogu podstawy każdego modelu
