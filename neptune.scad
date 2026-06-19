@@ -40,7 +40,7 @@ for (moon = moons) {
 }
 
 // Planeta (kula) - wystaje 75% średnicy powyżej podstawy, ścięta poniżej dna podstawy
-planet_center_z = base_thickness + 0.25 * planet_diameter;
+planet_center_z = base_thickness + 0.35 * planet_diameter;
 color(color_neptune)
     intersection() {
         translate([0, 0, planet_center_z])

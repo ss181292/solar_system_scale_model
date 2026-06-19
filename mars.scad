@@ -15,6 +15,7 @@ orbit_height = 0.2;
 color_mars = [1, 0, 0];
 color_white = [1, 1, 1];
 color_black = [0, 0, 0];
+color_gray = [128/255, 128/255, 128/255];
 
 // Księżyce - średnice orbit
 moons = [
@@ -45,7 +46,7 @@ arrow_head_length = 4;
 arrow_head_width = 6;
 translate([-13, -13, base_thickness])
     rotate([0, 0, 45])
-        color(color_black)
+        color(color_gray)
             linear_extrude(height = orbit_height)
                 polygon(points = [
                     [0, -arrow_shaft_width / 2],
