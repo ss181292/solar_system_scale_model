@@ -6,7 +6,7 @@
 - **Odległość od Słońca:** 57 909 175 km (0,39 AU)
 - **Okres orbitalny:** 87,97 dni
 
-## Model w skali 1:10¹⁰
+## Model w skali 1 : 10 000 000 000
 - **Wymiary modelu:** 0,49 mm
 
 ## Księżyce

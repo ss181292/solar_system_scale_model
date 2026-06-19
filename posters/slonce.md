@@ -5,7 +5,7 @@
 - **Masa:** 1,988 × 10³⁰ kg
 - **Temperatura powierzchni:** ~5 772 K
 
-## Model w skali 1:10¹⁰
+## Model w skali 1 : 10 000 000 000
 - **Wymiary modelu:** 139,1 mm
 
 ## Rola w Układzie

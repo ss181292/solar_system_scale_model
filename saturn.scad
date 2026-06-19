@@ -1,4 +1,4 @@
-// Saturn - Model w skali 1:10^10
+// Saturn - Model w skali 1 : 10 000 000 000
 // Średnica: 11,65 mm
 // Kolor: Lemon Yellow (#FFFACD)
 // Pierścienia: Pierścień B (9 200 - 117 580 km), Pierścień A (122 170 - 136 775 km), Przerwa Cassiniego, nachylenie 27°

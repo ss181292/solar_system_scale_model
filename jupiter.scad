@@ -1,4 +1,4 @@
-// Jowisz - Model w skali 1:10^10
+// Jowisz - Model w skali 1 : 10 000 000 000
 // Średnica: 13,98 mm
 // Kolory: Biały, żółty, pomarańczowy (8 pasów)
 // Księżyce: Io (42,17), Europa (67,11), Ganimedes (107,04), Kallisto (188,27)

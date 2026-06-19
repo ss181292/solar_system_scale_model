@@ -1,4 +1,4 @@
-// Wenus - Model w skali 1:10^10
+// Wenus - Model w skali 1 : 10 000 000 000
 // Średnica: 1,21 mm
 // Kolor: Lemon Yellow (#FFFACD)
 // Księżyce: Brak

@@ -1,4 +1,4 @@
-// Neptun - Model w skali 1:10^10
+// Neptun - Model w skali 1 : 10 000 000 000
 // Średnica: 4,92 mm
 // Kolor: Klein Blue (#002FA7)
 // Księżyce: Proteus (23,53), Tryton (70,95), Nereida (1102,78)

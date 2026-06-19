@@ -1,4 +1,4 @@
-// Uran - Model w skali 1:10^10
+// Uran - Model w skali 1 : 10 000 000 000
 // Średnica: 5,07 mm
 // Kolor: Cyan (#00FFFF)
 // Księżyce: Ariel (38,19), Umbriel (53,20), Tytania (87,26), Oberon (116,70)

@@ -6,7 +6,7 @@
 - **Całkowita masa:** ~3,0 × 10²¹ kg
 - **Największy obiekt:** Ceres
 
-## Model w skali 1:10¹⁰
+## Model w skali 1 : 10 000 000 000
 - **Reprezentacja:** rozciągnięty pas między Marsem a Jowiszem
 
 ## Znajdujące się tu obiekty

@@ -1,4 +1,4 @@
-// Mars - Model w skali 1:10^10
+// Mars - Model w skali 1 : 10 000 000 000
 // Średnica: 0,68 mm
 // Kolor: Red (#FF0000)
 // Księżyce: Fobos (1,88), Deimos (4,69)

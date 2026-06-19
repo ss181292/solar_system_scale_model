@@ -1,4 +1,4 @@
-// Ziemia - Model w skali 1:10^10
+// Ziemia - Model w skali 1 : 10 000 000 000
 // Średnica: 1,28 mm
 // Kolor: Sky Blue (#87CEEB)
 // Księżyce: Księżyc (76,88)

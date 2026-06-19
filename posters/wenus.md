@@ -6,7 +6,7 @@
 - **Odległość od Słońca:** 108 208 930 km (0,72 AU)
 - **Temperatura powierzchni:** ~464°C
 
-## Model w skali 1:10¹⁰
+## Model w skali 1 : 10 000 000 000
 - **Wymiary modelu:** 1,21 mm
 
 ## Księżyce

@@ -8,7 +8,7 @@
 - **Odległość od Słońca:** 5 906 380 000 km (39,48 AU)
 - **Okres orbitalny:** 248 lat
 
-### Model w skali 1:10¹⁰
+### Model w skali 1 : 10 000 000 000
 - **Wymiary modelu:** brak indywidualnego modelu
 - **Lokalizacja:** Pas Kuipera (za Neptunem)
 
@@ -32,7 +32,7 @@ Pluton składa się głównie z lodu i skał. Jest największym znanym obiektem 
 - **Odległość od Słońca:** 10 126 000 000 km (67,69 AU)
 - **Okres orbitalny:** 561 lat
 
-### Model w skali 1:10¹⁰
+### Model w skali 1 : 10 000 000 000
 - **Wymiary modelu:** brak indywidualnego modelu
 - **Lokalizacja:** Dysk rozproszony
 
@@ -55,7 +55,7 @@ Eris jest największą planetą karłowatą w Układzie Słonecznym - nawet niec
 - **Odległość od Słońca:** 6 450 100 000 km (43,12 AU)
 - **Okres orbitalny:** 283 lata
 
-### Model w skali 1:10¹⁰
+### Model w skali 1 : 10 000 000 000
 - **Wymiary modelu:** brak indywidualnego modelu
 - **Lokalizacja:** Pas Kuipera
 
@@ -79,7 +79,7 @@ Haumea to trzecia co do wielkości planeta karłowata w Układzie Słonecznym. J
 - **Odległość od Słońca:** 6 806 600 000 km (45,50 AU)
 - **Okres orbitalny:** 307 lat
 
-### Model w skali 1:10¹⁰
+### Model w skali 1 : 10 000 000 000
 - **Wymiary modelu:** brak indywidualnego modelu
 - **Lokalizacja:** Pas Kuipera
 

@@ -1,4 +1,4 @@
-// Merkury - Model w skali 1:10^10
+// Merkury - Model w skali 1 : 10 000 000 000
 // Średnica: 0,49 mm
 // Kolor: Grey (#808080)
 // Księżyce: Brak

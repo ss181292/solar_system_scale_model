@@ -7,7 +7,7 @@
 - **Okres orbitalny:** 29,45 lat
 - **Pierścienie:** rozciągają się na średnicę 357 860 km
 
-## Model w skali 1:10¹⁰
+## Model w skali 1 : 10 000 000 000
 - **Wymiary modelu:** 11,65 mm
 - **Pierścienie:** średnica 35,79 mm
 
