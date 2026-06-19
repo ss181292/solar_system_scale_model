@@ -113,9 +113,8 @@ mount_height = 80; // wysokość końcowa, od płaskiej góry do dołu
 mount_tilt = 15; // nachylenie do osi pokrywki, w stopniach
 mount_concave_r = 13.5; // promień wklęsłości ściany zewnętrznej
 mount_hole_d = 5;
-mount_cb_d = 10; // średnica zagłębienia na łeb wkrętu
-mount_cb_depth = 4;
-mount_boss_r = 7; // promień wysepki chroniącej materiał wokół otworów przed wklęsłością
+mount_inner_boss_r = 6; // promień wysepki wzmacniającej material wokół otworów (po stronie wewnętrznej)
+mount_inner_boss_len = 6; // o tyle wysepka wystaje od plaskiej, wewnetrznej sciany
 mount_hole_z1 = -31; // położenie (we własnej, nieobróconej osi) pierwszego otworu
 mount_hole_z2 = -67; // położenie drugiego otworu
 mount_margin_top = 15; // naddatek materiału nad punktem obrotu, przycinany do płaskiej góry
@@ -129,22 +128,20 @@ mount_H = (mount_height - mount_depth * sin(mount_tilt)) / cos(mount_tilt);
 mount_dish_axis_x = mount_depth + sqrt(mount_concave_r*mount_concave_r - (mount_width/2)*(mount_width/2));
 
 module mount_screw_hole(z) {
-    translate([0, 0, z]) rotate([0, 90, 0]) {
-        cylinder(h = 30, r = mount_hole_d / 2);
-        // Zagłębienie na łeb wkrętu, od wewnętrznej strony
-        translate([0, 0, -1])
-            cylinder(h = mount_cb_depth + 1, r = mount_cb_d / 2);
-    }
+    translate([0, 0, z]) rotate([0, 90, 0])
+        translate([0, 0, -(mount_inner_boss_len + 2)])
+        cylinder(h = mount_inner_boss_len + 32, r = mount_hole_d / 2);
 }
 
-module mount_boss_protect(z) {
-    translate([0, 0, z]) rotate([0, 90, 0])
-        cylinder(h = 60, r = mount_boss_r, center = true);
+// Wysepka wzmacniająca materiał wokół otworu, po stronie wewnętrznej (płaskiej)
+module mount_inner_boss(z) {
+    translate([-mount_inner_boss_len, 0, z]) rotate([0, 90, 0])
+        cylinder(h = mount_inner_boss_len, r = mount_inner_boss_r);
 }
 
 // Element mocujący: prostopadłościan nachylony do osi pokrywki, z płaską,
 // przyciętą górą (współpłaszczyznową z górą pokrywki), zaokrąglonym dołem,
-// wklęsłą ścianą zewnętrzną i dwoma otworami na wkręty z zagłębieniami od wewnątrz
+// wklęsłą ścianą zewnętrzną i dwoma otworami na wkręty
 module mount_tab() {
     intersection() {
         rotate([0, mount_tilt, 0])
@@ -155,14 +152,12 @@ module mount_tab() {
                     translate([mount_depth/2, 0, -mount_H + mount_r_round])
                         rotate([-90, 0, 0])
                         cylinder(h = mount_width, r = mount_r_round, center = true);
+                    mount_inner_boss(mount_hole_z1);
+                    mount_inner_boss(mount_hole_z2);
                 }
-                // Wklęsła ściana zewnętrzna, z wysepkami chroniącymi materiał wokół otworów
-                difference() {
-                    translate([mount_dish_axis_x, 0, -mount_H - 20])
-                        cylinder(h = mount_H + mount_margin_top + 40, r = mount_concave_r);
-                    mount_boss_protect(mount_hole_z1);
-                    mount_boss_protect(mount_hole_z2);
-                }
+                // Wklęsła ściana zewnętrzna
+                translate([mount_dish_axis_x, 0, -mount_H - 20])
+                    cylinder(h = mount_H + mount_margin_top + 40, r = mount_concave_r);
                 mount_screw_hole(mount_hole_z1);
                 mount_screw_hole(mount_hole_z2);
             }
