@@ -1,7 +1,7 @@
 // Saturn - Model w skali 1:10^10
 // Średnica: 11,65 mm
 // Kolor: Lemon Yellow (#FFFACD)
-// Pierścienie: średnica zewnętrzna 35,79 mm, średnica wewnętrzna 12,97 mm (uwzględniają średnicę planety), nachylenie 27°, lite
+// Pierścienia: Pierścień B (9 200 - 117 580 km), Pierścień A (122 170 - 136 775 km), Przerwa Cassiniego, nachylenie 27°
 // Księżyce: Titan (122,19), Reya (52,72), Dione (37,77)
 
 // Parametry
@@ -11,16 +11,20 @@ base_diameter = 78;
 base_thickness = 1;
 orbit_line_width = 0.4;
 orbit_height = 0.2;
-ring_diameter_outer = 35.79;
-ring_radius_outer = ring_diameter_outer / 2;
-ring_diameter_inner = 12.97;
-ring_radius_inner = ring_diameter_inner / 2;
 ring_thickness = 0.8; // Grubość pierścienia
 ring_angle = 27; // Kąt nachylenia pierścieni
 
-// Przerwa Cassiniego - radius od centrum planety: 117 580 - 122 170 km -> 11,76 - 12,22 mm
-cassini_radius_inner = 11.76;
-cassini_radius_outer = 12.22;
+// Pierścień B - radius od centrum planety: 92 000 - 117 580 km -> 9,2 - 11,758 mm
+ring_b_radius_inner = 9.2;
+ring_b_radius_outer = 11.758;
+
+// Pierścień A - radius od centrum planety: 122 170 - 136 775 km -> 12,217 - 13,6775 mm
+ring_a_radius_inner = 12.217;
+ring_a_radius_outer = 13.6775;
+
+// Przerwa Cassiniego - między pierścieniami B i A
+cassini_radius_inner = 11.758;
+cassini_radius_outer = 12.217;
 
 // Kolor Lemon Yellow
 color_saturn = [255/255, 250/255, 205/255];
@@ -49,7 +53,7 @@ for (moon = moons) {
             }
 }
 
-// Planeta (kula) + pierścienie - wystają 75% średnicy planety powyżej podstawy, ścięte poniżej dna podstawy
+// Planeta (kula) + pierścienia - wysteją 75% średnicy planety powyżej podstawy, ścięte poniżej dna podstawy
 planet_center_z = base_thickness + 0.40 * planet_diameter;
 color(color_saturn)
     intersection() {
@@ -58,17 +62,20 @@ color(color_saturn)
             translate([0, 0, planet_center_z])
                 sphere(r = planet_radius, $fn = 100);
 
-            // Pierścienie - lite, nachylone pod kątem 27°, z przerwą Cassiniego
+            // Pierścień B - wewnętrzny pierścień
             translate([0, 0, planet_center_z])
                 rotate([ring_angle, 0, 0])
                     difference() {
-                        cylinder(h = ring_thickness, r = ring_radius_outer, center = true, $fn = 100);
-                        cylinder(h = ring_thickness + 0.1, r = ring_radius_inner, center = true, $fn = 100);
-                        // Przerwa Cassiniego
-                        difference() {
-                            cylinder(h = ring_thickness + 0.1, r = cassini_radius_outer, center = true, $fn = 100);
-                            cylinder(h = ring_thickness + 0.2, r = cassini_radius_inner, center = true, $fn = 100);
-                        }
+                        cylinder(h = ring_thickness, r = ring_b_radius_outer, center = true, $fn = 100);
+                        cylinder(h = ring_thickness + 0.1, r = ring_b_radius_inner, center = true, $fn = 100);
+                    }
+
+            // Pierścień A - zewnętrzny pierścień
+            translate([0, 0, planet_center_z])
+                rotate([ring_angle, 0, 0])
+                    difference() {
+                        cylinder(h = ring_thickness, r = ring_a_radius_outer, center = true, $fn = 100);
+                        cylinder(h = ring_thickness + 0.1, r = ring_a_radius_inner, center = true, $fn = 100);
                     }
         }
         translate([-1000, -1000, 0])

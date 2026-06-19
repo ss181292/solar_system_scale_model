@@ -93,3 +93,11 @@
 - Usunięte symbole astronomiczne ze wszystkich 8 modeli planet
 - Usunięte z plików: mercury.scad, venus.scad, earth.scad, mars.scad, jupiter.scad, saturn.scad, neptune.scad, uranus.scad
 - Symbole były umieszczone w prawym górnym rogu podstawy każdego modelu
+
+### 17. Rozdzielenie pierścieni Saturna na pierścień A i B
+- Zmieniona struktura pierścieni w saturn.scad
+- Pierścień B: od 9,2 mm do 11,758 mm od środka (92 000 - 117 580 km)
+- Pierścień A: od 12,217 mm do 13,6775 mm od środka (122 170 - 136 775 km)
+- Przerwa Cassini'ego: między 11,758 mm a 12,217 mm (117 580 - 122 170 km)
+- Usunięta poprzednia monolityczna struktura pierścieni
+- Oba pierścienia zachowują: nachylenie 27°, grubość 0,8 mm, kolor żółty
