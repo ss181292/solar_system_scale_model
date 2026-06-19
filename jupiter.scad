@@ -120,7 +120,7 @@ color(color_white)
 // Wielka Czerwona Plama - wymiary ze zdjęcia
 grrs_width = 10 * scale_factor;
 grrs_height = 7 * scale_factor;
-grrs_center_from_top = 70 * scale_factor;
+grrs_center_from_top = 69 * scale_factor;
 grrs_z = planet_center_z + planet_radius - grrs_center_from_top;
 
 // Strefa 7 (dół) - żółta
@@ -139,6 +139,6 @@ grrs_rotation_angle = atan2(grrs_surface_distance, grrs_z - planet_center_z);
 color(color_orange)
     translate([grrs_surface_distance, 0, grrs_z])
         rotate(grrs_rotation_angle, [0, 1, 0])
-            linear_extrude(height = 0.15, center = true)
-                scale([grrs_width / 2, grrs_height / 2, 1])
+            linear_extrude(height = 0.03, center = true)
+                scale([grrs_height / 2, grrs_width / 2, 1])
                     circle(r = 1, $fn = 60);
