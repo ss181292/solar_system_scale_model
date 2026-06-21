@@ -21,3 +21,17 @@ A scale model of the Solar System. The repository currently contains two kinds o
 
 - OpenSCAD (`.scad` files) is used to generate the 3D model; `.stl`/`.3mf` are exported outputs. There is no build script — regenerate exports manually via the OpenSCAD GUI/CLI after editing `cassette.scad`.
 - No automated tests, linters, or build commands exist in this repository.
+
+## Tabliczki z opisami
+
+- Tabliczki z opisami powinny znajdować się w katalogu poster_models.
+- Źródłem tekstu dla tabliczek powinny być odpowiednie pliku z katalodu posters.
+- Każda tabliczka powinna być modelem 3D w formacie OpenSCAD.
+- Tabliczka powinna mieć wymiar 120mm szerokości na 170mm wysokości.
+- Tabliczka powinna być biała.
+- Tabliczka powinna mieć 2mm grubości.
+- Tabliczka powinna mieć czarną ramkę 8mm szeroką, grubą na 6mm o przekroju trójkątnym.
+- Podstawowy tekst powinien być napisany czcionką Georgia w rozmiarze 10pt.
+- Tekst powinien być czarny, wyniesiony 0.3mm do góry.
+- W prawym dolnym rogu powinien być kod QR odnoszący do strony http://solarsystem.skowron.it/{nazwa_planety}/ (nazwa planety w języku Angielskim).
+- Pod kodem QR powinien być odnośnik napisany czcionką Lucida Sans Typewriter w rozmiarze 8pt.
