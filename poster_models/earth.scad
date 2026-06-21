@@ -13,6 +13,19 @@ plaque_thickness = 2;    // grubość płyty [mm]
 frame_width  = 8;  // szerokość ramki [mm]
 frame_height = 6;  // wysokość (grubość) ramki, przekrój trójkątny [mm]
 
+// --- Otwory montażowe na wkręty ---
+screw_hole_diameter  = 4;   // średnica otworu na wkręt [mm]
+screw_edge_margin    = 8;   // odległość środka otworu od górnej/dolnej krawędzi [mm]
+countersink_diameter = 8;   // średnica stożkowego zagłębienia pod łeb wkręta [mm]
+countersink_depth    = 2;   // głębokość zagłębienia [mm]
+island_top_diameter  = 10;  // średnica wysepki u góry, przy łebku wkręta [mm]
+island_base_diameter = 15;  // średnica wysepki u podstawy, przy płycie [mm]
+island_height        = 6;   // wysokość wysepki na licu tabliczki, max 6mm [mm]
+
+screw_x        = plaque_width / 2;
+screw_y_top    = plaque_height - screw_edge_margin;
+screw_y_bottom = screw_edge_margin;
+
 // --- Kolory ---
 color_white = [1, 1, 1];
 color_black = [0, 0, 0];
@@ -195,6 +208,44 @@ module frame() {
     }
 }
 
+// Wysepka wzmacniająca otwór montażowy, dodana na licu tabliczki
+// (płyta ma tylko plaque_thickness, za mało na gwint wkręta).
+// Ścięty stożek: szerszy (island_base_diameter) u podstawy, przy
+// płycie, węższy (island_top_diameter) u góry, przy łebku wkręta.
+module screw_island(x, y) {
+    translate([x, y, plaque_thickness])
+        cylinder(h = island_height, d1 = island_base_diameter, d2 = island_top_diameter, $fn = 48);
+}
+
+module screw_islands() {
+    color(color_white) {
+        screw_island(screw_x, screw_y_top);
+        screw_island(screw_x, screw_y_bottom);
+    }
+}
+
+// Otwór montażowy: prosty przelot przez grubość płyty i wysepkę,
+// stożkowe zagłębienie pod łeb wkręta otwarte na szczycie wysepki,
+// oraz niewielki prześwit nad szczytem na wypadek gdyby ramka była
+// wyższa niż wysepka (frame_height > island_height).
+module screw_hole(x, y) {
+    eps = 0.2;
+    countersink_z   = plaque_thickness + island_height - countersink_depth;
+    island_top_z    = plaque_thickness + island_height;
+    clearance_height = max(0, frame_height - island_height) + eps;
+    translate([x, y, -eps])
+        cylinder(h = countersink_z + eps, d = screw_hole_diameter, $fn = 32);
+    translate([x, y, countersink_z])
+        cylinder(h = countersink_depth + eps, d1 = screw_hole_diameter, d2 = countersink_diameter, $fn = 32);
+    translate([x, y, island_top_z])
+        cylinder(h = clearance_height, d = countersink_diameter, $fn = 32);
+}
+
+module screw_holes() {
+    screw_hole(screw_x, screw_y_top);
+    screw_hole(screw_x, screw_y_bottom);
+}
+
 module body_text() {
     color(color_black) {
         translate([left_margin, plaque_height - top_margin, plaque_thickness])
@@ -238,7 +289,13 @@ module qr_code() {
     }
 }
 
-base_plate();
-frame();
+difference() {
+    union() {
+        base_plate();
+        frame();
+        screw_islands();
+    }
+    screw_holes();
+}
 body_text();
 qr_code();
