@@ -18,7 +18,7 @@
 Uwaga: Jowisz ma 95 znanych księżyców, ale na modelu zmieścić można tylko cztery największe.
 
 ## Ciekawostka
-Jowisz to największa planeta Układu Słonecznego - gazowy olbrzym składający się głównie z wodoru i helu. Jego Wielka Czerwona Plama to burza wiągu, która trwa przynajmniej 400 lat! Jowisz ma system pierścieni, choć znacznie słabszy niż Saturn.
+Jowisz to największa planeta Układu Słonecznego - gazowy olbrzym składający się głównie z wodoru i helu. Jego Wielka Czerwona Plama to burza wiągu (???), która trwa przynajmniej 400 lat! Jowisz ma system pierścieni, choć znacznie słabszy niż Saturn.
 
 ## Źródło
 Facts.md, Solar System Model Data
