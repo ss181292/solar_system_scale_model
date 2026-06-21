@@ -1,0 +1,2 @@
+- [Tabliczki poster plaques](project_tabliczki_plaques.md) — ongoing per-planet plaque generation; earth.scad is the template, build notes live in CLAUDE.md
+- [No-ask terminal commands](feedback_terminal_commands.md) — don't ask before running low-risk validation/render commands during iterative debugging
