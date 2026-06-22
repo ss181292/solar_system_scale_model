@@ -225,13 +225,27 @@ module qr_code() {
     }
 }
 
+// Otwory są wycinane osobno z białej płyty i z czarnej ramki/wysepek
+// (a nie raz, ze wspólnej unii), żeby ścianka otworu przejmowała
+// kolor materiału, w którym faktycznie leży - biały do wysokości
+// płyty bazowej, czarny powyżej (ramka/wysepka). Kolor w OpenSCAD
+// jest atrybutem bryły wycinanej (narzędzia), nie operacji
+// difference() jako takiej - więc kolorować trzeba screw_holes()
+// w miejscu wycinania, a nie wynik różnicy z zewnątrz (to drugie
+// nie miało żadnego efektu - ścianka otworu nadal wychodziła
+// w domyślnym, niezdefiniowanym kolorze, czyli zielonym).
+difference() {
+    base_plate();
+    color(color_white)
+        screw_holes();
+}
 difference() {
     union() {
-        base_plate();
         frame();
         screw_islands();
     }
-    screw_holes();
+    color(color_black)
+        screw_holes();
 }
 body_text();
 qr_code();
