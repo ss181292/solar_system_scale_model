@@ -11,16 +11,16 @@ plaque_thickness = 2;    // grubość płyty [mm]
 
 // --- Ramka ---
 frame_width  = 8;  // szerokość ramki [mm]
-frame_height = 6;  // wysokość (grubość) ramki, przekrój trójkątny [mm]
+frame_height = 3;  // wysokość ramki, zwykły przekrój prostokątny [mm]
 
 // --- Otwory montażowe na wkręty ---
 screw_hole_diameter  = 4;   // średnica otworu na wkręt [mm]
 screw_edge_margin    = 8;   // odległość środka otworu od górnej/dolnej krawędzi [mm]
 countersink_diameter = 8;   // średnica stożkowego zagłębienia pod łeb wkręta [mm]
 countersink_depth    = 2;   // głębokość zagłębienia [mm]
-island_top_diameter  = 10;  // średnica wysepki u góry, przy łebku wkręta [mm]
-island_base_diameter = 15;  // średnica wysepki u podstawy, przy płycie [mm]
-island_height        = 6;   // wysokość wysepki na licu tabliczki, max 6mm [mm]
+island_top_diameter  = 9;  // średnica wysepki u góry, przy łebku wkręta [mm]
+island_base_diameter = 12;  // średnica wysepki u podstawy, przy płycie [mm]
+island_height        = 3;   // wysokość wysepki na licu tabliczki, max 6mm [mm]
 
 screw_x        = plaque_width / 2;
 screw_y_top    = plaque_height - screw_edge_margin;
@@ -70,7 +70,8 @@ body_lines = [
 qr_link_display = "http://solarsystem.skowron.it/earth/";
 qr_size    = 28;  // rozmiar boku kodu QR [mm]
 qr_margin  = 4;   // odstęp od wewnętrznej krawędzi ramki [mm]
-qr_link_gap = 1;  // odstęp między kodem QR a tekstem odnośnika [mm]
+qr_link_gap = 2;  // odstęp między kodem QR a tekstem odnośnika [mm]
+qr_lift    = 3;   // podniesienie kodu QR i odnośnika, by nie wchodziły na wysepkę [mm]
 qr_modules = 29;
 qr_matrix = [
     [1,1,1,1,1,1,1,0,1,1,0,0,0,1,0,1,0,0,0,1,1,0,1,1,1,1,1,1,1],
@@ -113,98 +114,22 @@ module base_plate() {
         cube([plaque_width, plaque_height, plaque_thickness]);
 }
 
-// Ramka o przekroju trójkątnym, zbudowana z prostych klinów
-// (bez difference()/hull(), żeby podgląd OpenCSG odpowiadał
-// rzeczywistej geometrii). Ściana zewnętrzna jest pionowa
-// (flush z krawędzią tabliczki) i ma wysokość frame_height;
-// ściana wewnętrzna opada po skosie do "ostrza" przy płaskiej
-// powierzchni z tekstem, frame_width od krawędzi.
-
-// Klin wzdłuż osi X. Ściana zewnętrzna (pionowa) przy Y=0,
-// "ostrze" (zerowa wysokość) przy Y=frame_width.
-module edge_wedge_x(length) {
-    polyhedron(
-        points = [
-            [0, 0, 0], [0, 0, frame_height], [0, frame_width, 0],
-            [length, 0, 0], [length, 0, frame_height], [length, frame_width, 0]
-        ],
-        faces = [
-            [0, 1, 2],
-            [3, 5, 4],
-            [0, 3, 4, 1],
-            [0, 2, 5, 3],
-            [1, 4, 5, 2]
-        ]
-    );
-}
-
-// Klin wzdłuż osi Y. Ściana zewnętrzna (pionowa) przy X=0,
-// "ostrze" (zerowa wysokość) przy X=frame_width.
-module edge_wedge_y(length) {
-    polyhedron(
-        points = [
-            [0, 0, 0], [0, 0, frame_height], [frame_width, 0, 0],
-            [0, length, 0], [0, length, frame_height], [frame_width, length, 0]
-        ],
-        faces = [
-            [0, 1, 2],
-            [3, 5, 4],
-            [0, 3, 4, 1],
-            [0, 2, 5, 3],
-            [1, 4, 5, 2]
-        ]
-    );
-}
-
-// Narożnik łączący dwa klince. Pełna wysokość w zewnętrznym
-// rogu (0,0), "ostrze" w rogu wewnętrznym (frame_width, frame_width).
-module corner_wedge() {
-    fw = frame_width;
-    fh = frame_height;
-    polyhedron(
-        points = [
-            [0, 0, 0], [fw, 0, 0], [fw, fw, 0], [0, fw, 0],
-            [0, 0, fh], [fw, 0, fh], [0, fw, fh]
-        ],
-        faces = [
-            [0, 3, 2, 1],
-            [0, 1, 5, 4],
-            [0, 4, 6, 3],
-            [4, 5, 6],
-            [1, 2, 5],
-            [3, 6, 2],
-            [2, 6, 5]
-        ]
-    );
-}
-
+// Ramka o zwykłym przekroju prostokątnym, zbudowana z czterech
+// belek (bez boolowskich operacji). Belki lewa/prawa biegną na
+// całą wysokość tabliczki (razem z narożnikami), belki górna/dolna
+// tylko na odcinku między nimi - dzięki temu nic się nie nakłada.
 module frame() {
-    edge_x_length = plaque_width - 2 * frame_width;
-    edge_y_length = plaque_height - 2 * frame_width;
+    inner_span = plaque_width - 2 * frame_width;
     color(color_black) {
-        translate([frame_width, 0, plaque_thickness])
-            edge_wedge_x(edge_x_length);
-        translate([frame_width, plaque_height, plaque_thickness])
-            mirror([0, 1, 0])
-                edge_wedge_x(edge_x_length);
-
-        translate([0, frame_width, plaque_thickness])
-            edge_wedge_y(edge_y_length);
-        translate([plaque_width, frame_width, plaque_thickness])
-            mirror([1, 0, 0])
-                edge_wedge_y(edge_y_length);
-
         translate([0, 0, plaque_thickness])
-            corner_wedge();
-        translate([plaque_width, 0, plaque_thickness])
-            mirror([1, 0, 0])
-                corner_wedge();
-        translate([0, plaque_height, plaque_thickness])
-            mirror([0, 1, 0])
-                corner_wedge();
-        translate([plaque_width, plaque_height, plaque_thickness])
-            rotate([0, 0, 180])
-                corner_wedge();
+            cube([frame_width, plaque_height, frame_height]);
+        translate([plaque_width - frame_width, 0, plaque_thickness])
+            cube([frame_width, plaque_height, frame_height]);
+
+        translate([frame_width, 0, plaque_thickness])
+            cube([inner_span, frame_width, frame_height]);
+        translate([frame_width, plaque_height - frame_width, plaque_thickness])
+            cube([inner_span, frame_width, frame_height]);
     }
 }
 
@@ -218,27 +143,38 @@ module screw_island(x, y) {
 }
 
 module screw_islands() {
-    color(color_white) {
+    color(color_black) {
         screw_island(screw_x, screw_y_top);
         screw_island(screw_x, screw_y_bottom);
     }
 }
 
-// Otwór montażowy: prosty przelot przez grubość płyty i wysepkę,
-// stożkowe zagłębienie pod łeb wkręta otwarte na szczycie wysepki,
-// oraz niewielki prześwit nad szczytem na wypadek gdyby ramka była
-// wyższa niż wysepka (frame_height > island_height).
+// Otwór montażowy jako pojedyncza bryła obrotowa (rotate_extrude)
+// zamiast kilku nakładających się walców/stożków: profil prosty
+// przelot -> stożkowe zagłębienie -> prześwit (na wypadek gdyby
+// ramka była wyższa niż wysepka). Nakładające się, stykające się
+// na tej samej średnicy bryły dawały zdegenerowane trójkąty przy
+// eksporcie do 3MF (walidacja siatki tam jest ostrzejsza niż w STL).
 module screw_hole(x, y) {
     eps = 0.2;
-    countersink_z   = plaque_thickness + island_height - countersink_depth;
-    island_top_z    = plaque_thickness + island_height;
-    clearance_height = max(0, frame_height - island_height) + eps;
-    translate([x, y, -eps])
-        cylinder(h = countersink_z + eps, d = screw_hole_diameter, $fn = 32);
-    translate([x, y, countersink_z])
-        cylinder(h = countersink_depth + eps, d1 = screw_hole_diameter, d2 = countersink_diameter, $fn = 32);
-    translate([x, y, island_top_z])
-        cylinder(h = clearance_height, d = countersink_diameter, $fn = 32);
+    r_bore    = screw_hole_diameter / 2;
+    r_counter = countersink_diameter / 2;
+
+    z_back          = -eps;
+    z_counter_start = plaque_thickness + island_height - countersink_depth;
+    z_island_top    = plaque_thickness + island_height;
+    z_top           = max(z_island_top, plaque_thickness + frame_height) + eps;
+
+    translate([x, y, 0])
+        rotate_extrude($fn = 32)
+            polygon(points = [
+                [0,         z_back],
+                [r_bore,    z_back],
+                [r_bore,    z_counter_start],
+                [r_counter, z_island_top],
+                [r_counter, z_top],
+                [0,         z_top]
+            ]);
 }
 
 module screw_holes() {
@@ -267,7 +203,7 @@ module body_text() {
 
 module qr_code() {
     inner_right  = plaque_width - frame_width - qr_margin;
-    inner_bottom = frame_width + qr_margin;
+    inner_bottom = frame_width + qr_margin + qr_lift;
 
     qr_bottom = inner_bottom + link_size + qr_link_gap;
     qr_left   = inner_right - qr_size;
