@@ -32,10 +32,10 @@ color_black = [0, 0, 0];
 
 // --- Typografia ---
 mm_per_pt   = 25.4 / 72;       // przelicznik pt -> mm
-main_font   = "Georgia";
+main_font   = "Arial Black";
 link_font   = "Lucida Sans Typewriter";
 text_size   = 10 * mm_per_pt;  // tekst podstawowy: 10pt
-link_size   = 8 * mm_per_pt;   // odnośnik pod kodem QR: 8pt
+link_size   = 9 * mm_per_pt;   // odnośnik pod kodem QR: 9pt
 title_size  = text_size * 1.6;
 sub_size    = text_size * 1.15;
 line_height = text_size * 1.3;
@@ -48,21 +48,23 @@ top_margin  = 14;
 title_line = "Ziemia";
 
 body_lines = [
-    ["Ziemia - planeta na której żyjemy. Ta mała", text_size],
-    ["niebieska kuleczka o średnicy 1,28 mm to", text_size],
-    ["właśnie ona. Okrąg, który widać na obrzeżu", text_size],
-    ["modelu to orbita Księżyca. Księżyc w tej", text_size],
-    ["skali miałby 0,34 mm średnicy.", text_size],
+    ["Ziemia - planeta na której żyjemy.", text_size],
+    ["Ta mała niebieska kuleczka o", text_size],
+    ["średnicy 1,28 mm to właśnie ona.", text_size],
+    ["Okrąg, który widać na obrzeżu", text_size],
+    ["modelu to orbita Księżyca. Księżyc", text_size],
+    ["w tej skali miałby 0,34 mm", text_size],
+    ["średnicy.", text_size],
     ["", text_size],
-    ["Znajdujemy się 149 598 023 km czyli", text_size],
-    ["dokładnie 1 AU (jednostka astronomiczna)", text_size],
-    ["od Słońca.", text_size],
+    ["Znajdujemy się 149 598 023 km", text_size],
+    ["czyli dokładnie 1 AU (jednostka", text_size],
+    ["astronomiczna) od Słońca.", text_size],
     ["", text_size],
     ["Podstawowe dane", sub_size],
     ["Średnica: 12 756 km", text_size],
     ["Masa: 5,972 × 10²⁴ kg", text_size],
-    ["Odległość od Słońca: 149 598 023 km", text_size],
-    ["(1,00 AU)", text_size],
+    ["Odległość od Słońca: 149 598 023", text_size],
+    ["km (1,00 AU)", text_size],
     ["Okres orbitalny: 365,256 dni", text_size],
 ];
 
