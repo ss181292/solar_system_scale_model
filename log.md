@@ -101,3 +101,9 @@
 - Przerwa Cassini'ego: między 11,758 mm a 12,217 mm (117 580 - 122 170 km)
 - Usunięta poprzednia monolityczna struktura pierścieni
 - Oba pierścienia zachowują: nachylenie 27°, grubość 0,8 mm, kolor żółty
+
+### 18. Aktualizacja tabliczki Ziemi do nowego wzorca adresu QR
+- Zmieniony adres docelowy kodu QR w earth.scad z http://solarsystem.skowron.it/earth/ na http://ziemia.orbity.pl (zgodnie ze zmienionym wzorcem w CLAUDE.md)
+- Wygenerowana nowa macierz QR (25×25 modułów) dla nowego adresu
+- Czcionka odnośnika pod kodem QR zmieniona z Lucida Sans Typewriter na Arial Black (9pt)
+- Zregenerowany eksport earth.3mf

@@ -33,8 +33,8 @@ A scale model of the Solar System. The repository currently contains two kinds o
 - Tabliczka powinna mieć czarną ramkę 8mm szeroką, grubą na 3mm o przekroju prostokątnym.
 - Podstawowy tekst powinien być napisany czcionką Arial Black w rozmiarze 10pt.
 - Tekst powinien być czarny, wyniesiony 0.3mm do góry.
-- W prawym dolnym rogu powinien być kod QR odnoszący do strony http://solarsystem.skowron.it/{nazwa_planety}/ (nazwa planety w języku Angielskim).
-- Pod kodem QR powinien być odnośnik napisany czcionką Lucida Sans Typewriter w rozmiarze 9pt, poprzedzony "http://", z 1mm odstępu od kodu QR.
+- W prawym dolnym rogu powinien być kod QR odnoszący do strony http://{nazwa_planety}.orbity.pl (nazwa planety w języku Polskim).
+- Pod kodem QR powinien być odnośnik napisany czcionką Arial Black w rozmiarze 9pt, poprzedzony "http://", z 1mm odstępu od kodu QR.
 
 ### Implementacja - wnioski z poster_models/earth.scad
 
