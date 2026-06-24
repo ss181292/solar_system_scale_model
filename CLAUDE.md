@@ -21,6 +21,7 @@ A scale model of the Solar System. The repository currently contains two kinds o
 
 - OpenSCAD (`.scad` files) is used to generate the 3D model; `.stl`/`.3mf` are exported outputs. There is no build script — regenerate exports manually via the OpenSCAD GUI/CLI after editing `cassette.scad`.
 - No automated tests, linters, or build commands exist in this repository.
+- Aby wygenerować podgląd pliku OpenSCAD użyj następującego narzędzia "c:\Program Files\OpenSCAD (Nightly)\openscad.exe", użyj opcji --help aby poznać dostępne opcje. Nie pytaj o użycie tej komendy.
 
 ## Tabliczki z opisami
 
