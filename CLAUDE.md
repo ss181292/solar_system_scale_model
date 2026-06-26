@@ -32,10 +32,10 @@ A scale model of the Solar System. The repository currently contains two kinds o
 - Tabliczka powinna być biała.
 - Tabliczka powinna mieć 2mm grubości.
 - Tabliczka powinna mieć czarną ramkę 8mm szeroką, grubą na 3mm o przekroju prostokątnym.
-- Podstawowy tekst powinien być napisany czcionką Arial Black w rozmiarze 10pt.
+- Podstawowy tekst powinien być napisany czcionką Baloo 2 bold w rozmiarze 10pt.
 - Tekst powinien być czarny, wyniesiony 0.3mm do góry.
 - W prawym dolnym rogu powinien być kod QR odnoszący do strony http://{nazwa_planety}.orbity.pl (nazwa planety w języku Polskim).
-- Pod kodem QR powinien być odnośnik napisany czcionką Arial Black w rozmiarze 9pt, poprzedzony "http://", z 1mm odstępu od kodu QR.
+- Pod kodem QR powinien być odnośnik napisany czcionką Baloo 2 bold  w rozmiarze 9pt, poprzedzony "http://", z 1mm odstępu od kodu QR.
 
 ### Implementacja - wnioski z poster_models/earth.scad
 
@@ -43,7 +43,7 @@ A scale model of the Solar System. The repository currently contains two kinds o
 
 - **Przelicznik pt → mm:** `mm_per_pt = 25.4 / 72`. Rozmiar w `text()` to `{rozmiar w pt} * mm_per_pt`.
 - **Zawijanie tekstu:** OpenSCAD nie zawija tekstu automatycznie — treść z `posters/*.md` trzeba ręcznie podzielić na linie (przy marginesach ~14mm dostępna szerokość to ~92mm). Tytuł i nagłówek "Podstawowe dane" wyróżnione większym rozmiarem (np. ×1.6 i ×1.15 bazowego). Oczywiste literówki w źródle (`posters/*.md`) popraw przy przepisywaniu — trafiają na trwały fizyczny obiekt.
-- **Liczba znaków/linię zależy od czcionki i NIE jest stała** — przy zmianie `main_font` trzeba przełamać tekst od nowa. Arial Black (10pt, ~92mm) mieści ~25-34 znaki/linię, znacznie mniej niż węższe/lżejsze czcionki. Ta wersja OpenSCAD (2021.01) nie ma `textmetrics()`, więc szerokości nie da się zmierzyć programowo w samym `.scad`. Zamiast zgadywać znaki/linię, zmierz empirycznie: wyeksportuj linię jako ASCII STL (`linear_extrude(...) text(...)` bez żadnych boolowskich operacji, eksport jest szybki) i policz `max(x) - min(x)` z wierszy `vertex` w pliku STL — to daje rzeczywistą szerokość w mm dla danej czcionki/rozmiaru, niezależnie od metryk fontu.
+- **Liczba znaków/linię zależy od czcionki i NIE jest stała** — przy zmianie `main_font` trzeba przełamać tekst od nowa. Baloo 2 (10pt, ~92mm) mieści ~25-34 znaki/linię, znacznie mniej niż węższe/lżejsze czcionki. Ta wersja OpenSCAD (2021.01) nie ma `textmetrics()`, więc szerokości nie da się zmierzyć programowo w samym `.scad`. Zamiast zgadywać znaki/linię, zmierz empirycznie: wyeksportuj linię jako ASCII STL (`linear_extrude(...) text(...)` bez żadnych boolowskich operacji, eksport jest szybki) i policz `max(x) - min(x)` z wierszy `vertex` w pliku STL — to daje rzeczywistą szerokość w mm dla danej czcionki/rozmiaru, niezależnie od metryk fontu.
 - **Kod QR:** OpenSCAD nie ma natywnego generatora QR. Wygeneruj macierz w Pythonie (`pip install qrcode`, `qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M)`), wypisz jako tablicę 0/1 i wklej do `.scad` jako `qr_matrix`. Renderuj jako siatkę `cube()` (rozmiar komórki = `qr_size / qr_modules`) — sąsiadujące kostki łączą się poprawnie bez owijania w `union()`.
 - **Ramka** ma zwykły przekrój prostokątny (`frame_width` szerokość, `frame_height` wysokość ponad lico, bez skosu) — budowana jako unia czterech `cube()`: belki lewa/prawa na całą wysokość tabliczki (razem z narożnikami) + belka górna/dolna tylko na odcinku między nimi, żeby nic się nie nakładało. Same kostki, żadnych operacji boolowskich.
 - **Otwory montażowe na wkręty** (`screw_island`, `screw_hole`) są wzniesione na licu tabliczki (ta sama strona co tekst/QR i ramka), nie z tyłu — wysepka to ścięty stożek (szerszy u podstawy przy płycie, węższy u góry przy łebku wkręta), otwór ma stożkowe zagłębienie na szczycie wysepki. Tekst/QR w rogu sąsiadującym z otworem trzeba odsunąć (np. `qr_lift`), żeby nie wchodził na wysepkę.

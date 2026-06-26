@@ -32,8 +32,8 @@ color_black = [0, 0, 0];
 
 // --- Typografia ---
 mm_per_pt   = 25.4 / 72;       // przelicznik pt -> mm
-main_font   = "Arial Black";
-link_font   = "Arial Black";
+main_font   = "Baloo 2:style=Bold";
+link_font   = "Baloo 2:style=Bold";
 text_size   = 10 * mm_per_pt;  // tekst podstawowy: 10pt
 link_size   = 9 * mm_per_pt;   // odnośnik pod kodem QR: 9pt
 title_size  = text_size * 1.6;

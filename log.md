@@ -105,5 +105,5 @@
 ### 18. Aktualizacja tabliczki Ziemi do nowego wzorca adresu QR
 - Zmieniony adres docelowy kodu QR w earth.scad z http://solarsystem.skowron.it/earth/ na http://ziemia.orbity.pl (zgodnie ze zmienionym wzorcem w CLAUDE.md)
 - Wygenerowana nowa macierz QR (25×25 modułów) dla nowego adresu
-- Czcionka odnośnika pod kodem QR zmieniona z Lucida Sans Typewriter na Arial Black (9pt)
+- Czcionka odnośnika pod kodem QR zmieniona z Lucida Sans Typewriter na Baloo 2 (9pt)
 - Zregenerowany eksport earth.3mf
