@@ -211,31 +211,14 @@ color(color_base) {
                         triangular_prism(-mount_width/4 - 1, -base_thickness, 0);
                         triangular_prism(mount_width/4 - 1, -base_thickness, 0);
                     }
-
-            // Element mocujący na górze podstawy (skierowany w dół), przesunięty o 2cm
-            translate([0, 0, base_thickness])
-                rotate([0, 0, mount_angle])
-                    translate([base_radius + mount_gap + 20, 0, 0]) {  // +20mm (2cm) radialnie
-                        mount_tab();
-                        mount_fill_mount();
-                    }
         }
 
-        // Otwór 2mm przechodzący poziomo przez wszystkie elementy
+        // Otwór 2mm przechodzący poziomo przez podstawę i łącznik
         translate([0, 0, base_thickness / 2])
             rotate([0, 0, mount_angle])
             translate([base_radius + mount_gap, 0, 0])
             rotate([0, 90, 0])
             cylinder(h = 500, r = 1, center = true);
-
-        // Wgłębienia pasujące do wypustek (na mount_fill_mount, przesunięte o 2cm)
-        // Wgłębienia są o 10% większe niż wypustki
-        translate([0, 0, base_thickness])
-            rotate([0, 0, mount_angle])
-            translate([base_radius + mount_gap + 20, 0, 0]) {
-                triangular_prism_cavity(-mount_width/4 - 1, -base_thickness, 0);
-                triangular_prism_cavity(mount_width/4 - 1, -base_thickness, 0);
-            }
     }
 }
 
