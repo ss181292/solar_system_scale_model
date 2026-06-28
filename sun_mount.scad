@@ -29,6 +29,11 @@ mount_hole_z2 = -70;
 base_diameter = 110;
 base_radius = base_diameter / 2;
 
+// Parametry zagłębienia stożkowego na otwór przechodzący
+countersink_diameter = 8;
+countersink_radius = countersink_diameter / 2;
+countersink_depth = 2.5;
+
 // Kolory
 color_mount = [0.7, 0.7, 0.7];
 
@@ -152,6 +157,20 @@ color(color_mount) {
                 translate([base_radius + mount_gap, 0, 0])
                     rotate([0, 90, 0])
                     cylinder(h = 500, r = 2, center = true);
+
+        // Zagłębienie stożkowe na otwór przechodzący (od strony wklęsłej)
+        translate([0, 0, base_thickness / 2])
+            rotate([0, 0, mount_angle])
+                translate([base_radius + mount_gap, 0, 0])
+                    rotate([0, 90, 0])
+                    cylinder(h = countersink_depth, r1 = countersink_radius, r2 = 2, center = true);
+
+        // Cylindryczny otwór o średnicy 8mm w elemencie mocującym (od strony wklęsłej)
+        translate([0, 0, base_thickness / 2])
+            rotate([0, 0, mount_angle])
+                translate([base_radius + mount_gap, 0, 0])
+                    rotate([0, 90, 0])
+                    cylinder(h = countersink_depth, r = countersink_radius, center = true);
 
         // Wgłębienia pasujące do wypustek (o 10% większe)
         translate([0, 0, base_thickness])
