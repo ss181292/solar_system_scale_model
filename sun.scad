@@ -81,15 +81,26 @@ module mount_fill() {
 
 // Niebieska podstawa
 color(color_base) {
-    cylinder(h = base_thickness, r = base_radius, center = false);
+    difference() {
+        union() {
+            cylinder(h = base_thickness, r = base_radius, center = false);
 
-    // Element mocujący na górze podstawy (skierowany w dół)
-    translate([0, 0, base_thickness])
-        rotate([0, 0, mount_angle])
-            translate([base_radius + mount_gap, 0, 0]) {
-                mount_tab();
-                mount_fill();
-            }
+            // Element mocujący na górze podstawy (skierowany w dół)
+            translate([0, 0, base_thickness])
+                rotate([0, 0, mount_angle])
+                    translate([base_radius + mount_gap, 0, 0]) {
+                        mount_tab();
+                        mount_fill();
+                    }
+        }
+
+        // Otwór 2mm przechodzący poziomo przez wszystkie elementy
+        translate([0, 0, base_thickness / 2])
+            rotate([0, 0, mount_angle])
+            translate([base_radius + mount_gap, 0, 0])
+            rotate([0, 90, 0])
+            cylinder(h = 500, r = 1, center = true);
+    }
 }
 
 // Żółte Słońce - dolna część na górnej powierzchni podstawy
