@@ -22,8 +22,8 @@ base_thickness = 15;
 
 // Parametry otworu montażowego
 mounting_hole_diameter = 4;
-mount_hole_z1 = -35;
-mount_hole_z2 = -70;
+mount_hole_z1 = -33;
+mount_hole_z2 = -73;
 
 // Parametry otworu przechodzącego przez model
 base_diameter = 110;
@@ -108,7 +108,7 @@ color(color_mount) {
             // Główne ciało elementu mocującego
             translate([0, 0, base_thickness])
                 rotate([0, 0, mount_angle])
-                    translate([base_radius + mount_gap, 0, 0]) {
+                    translate([base_radius + mount_gap, 0, 3]) {
                         rotate([0, mount_tilt, 0]) {
                             intersection() {
                                 difference() {
@@ -136,8 +136,9 @@ color(color_mount) {
                                 }
 
                                 // Przycięcie
-                                translate([-1000, -1000, -3000])
-                                    cube([2000, 2000, 3000]);
+                                rotate(15, [0, -1, 0])
+                                    translate([-1000, -1000, -3003])
+                                        cube([2000, 2000, 3000]);
                             }
                         } 
                     }
