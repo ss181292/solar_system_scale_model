@@ -22,10 +22,8 @@ base_thickness = 15;
 
 // Parametry otworu montażowego
 mounting_hole_diameter = 4;
-countersink_diameter = 8;
-countersink_depth = 2.5;
-mount_hole_z1 = -20;
-mount_hole_z2 = -50;
+mount_hole_z1 = -35;
+mount_hole_z2 = -70;
 
 // Parametry otworu przechodzącego przez model
 base_diameter = 110;
@@ -66,8 +64,6 @@ module mount_screw_hole(z) {
     translate([0, 0, z]) rotate([0, 90, 0]) {
         translate([0, 0, -(mount_inner_boss_len + 2)])
             cylinder(h = mount_inner_boss_len + 32, r = mounting_hole_diameter / 2);
-        translate([0, 0, 0])
-            cylinder(h = countersink_depth, r1 = countersink_diameter/2, r2 = mounting_hole_diameter/2);
     }
 }
 
@@ -149,13 +145,13 @@ color(color_mount) {
                     }
         }
 
-        // Otwór 2mm przechodzący poziomo wzdłuż osi X przez element mocujący
+        // Otwór 4mm przechodzący poziomo wzdłuż osi X przez element mocujący
         // Na tej samej wysokości jak w sun.scad
         translate([0, 0, base_thickness / 2])
             rotate([0, 0, mount_angle])
                 translate([base_radius + mount_gap, 0, 0])
                     rotate([0, 90, 0])
-                    cylinder(h = 500, r = 1, center = true);
+                    cylinder(h = 500, r = 2, center = true);
 
         // Wgłębienia pasujące do wypustek (o 10% większe)
         translate([0, 0, base_thickness])
