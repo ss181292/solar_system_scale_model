@@ -139,7 +139,7 @@ color(color_mount) {
                                 translate([-1000, -1000, -3000])
                                     cube([2000, 2000, 3000]);
                             }
-                        }
+                        } 
                     }
 
             // Część łącznika z elementem
@@ -163,14 +163,14 @@ color(color_mount) {
             rotate([0, 0, mount_angle])
                 translate([base_radius + mount_gap, 0, 0])
                     rotate([0, 90, 0])
-                    cylinder(h = countersink_depth, r1 = countersink_radius, r2 = 2, center = true);
+                    cylinder(h = countersink_depth, r1 = 2, r2 = countersink_radius, center = true);
 
         // Cylindryczny otwór o średnicy 8mm w elemencie mocującym (od strony wklęsłej)
         translate([0, 0, base_thickness / 2])
             rotate([0, 0, mount_angle])
-                translate([base_radius + mount_gap, 0, 0])
+                translate([base_radius + mount_gap+countersink_depth/2, 0, 0])
                     rotate([0, 90, 0])
-                    cylinder(h = countersink_depth, r = countersink_radius, center = true);
+                    cylinder(h = countersink_depth*2, r = countersink_radius);
 
         // Wgłębienia pasujące do wypustek (o 10% większe)
         translate([0, 0, base_thickness])
