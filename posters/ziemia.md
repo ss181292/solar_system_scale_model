@@ -1,4 +1,4 @@
-# Ziemia
+# &#x2641; Ziemia
 
 Ziemia - planeta na której żyjemy. Ta mała niebieska kuleczka o&nbsp;średnicy 1,28&nbsp;mm to właśnie ona. Okrąg, który widać na obrzeżu modelu to orbita Księżyca. Księzyc w tej skali miałby 1/3&nbsp;mm średnicy.
 

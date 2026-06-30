@@ -1,4 +1,4 @@
-# Wenus
+# &#x2640;  Wenus
 Druga planeta Układu Słonecznego. Na niebie widoczna jako najjaśniejszy obiekt po Słońcu i&nbsp;Księżycu. Tak jak Ziemia jest planetą skalistą i&nbsp;posiada atmosferę. Ponieważ masę i&nbsp;rozmiar ma również bardzo zbliżoną do naszej Planety, nazywana czasem siostrą Ziemi. Tak jak Merkury nie posiada żadnych księżyców.
 
 Jej atmosfera jest bardzo różna od ziemskiej. Ciśnienie atmosferyczne na powierzchni jest ponad 90 razy większe. Potężny efekt cieplarniany spowodowany ponad 96-cio procentowym udziałem dwutlenku węgla w&nbsp;atmosferze oraz mniejsza odległość od Słońca skutkuje podgrzaniem atmosfery do ponad 460&nbsp;°C

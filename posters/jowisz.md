@@ -1,4 +1,4 @@
-# Jowisz
+# &#x2643; Jowisz
 Największa planeta Układu Słonecznego - gazowy olbrzym składający się głównie z&nbsp;wodoru i&nbsp;helu. Jeden z&nbsp;najjaśniejszych obiektów na nocnym niebie ustępujący tylko Księżycowi i&nbsp;Wenus.
 
 Widoczne na jego powierzchni pasy są związane z układem chmur i&nbsp;wiatrów. Na granicy tych pasów dochodzi do silnych turbulencji i&nbsp;powstawania układów burzowych.
@@ -12,9 +12,3 @@ Jowisz posiada ponad 100 odkrytych księżyców, z&nbsp;czego 4 największe (Io,
 - **Masa:** około 318 mas Ziemi lub 1/1047 masy Słońca
 - **Odległość od Słońca:** 778 mln km (5,2 AU)
 - **Okres orbitalny:** 11,86 lat
-
-## Wielkie księżyce
-- **Io** - wulkaniczny księżyc, znajduje się najbliżej Jowisza
-- **Europa** - pokryty lodową skorupą
-- **Ganimedes** - największy księżyc w Układzie Słonecznym
-- **Kallisto** - pokryty kraterami - przypomina Księzyć ziemski
