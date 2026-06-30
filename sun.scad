@@ -213,12 +213,12 @@ color(color_base) {
                     }
         }
 
-        // Otwór 2mm przechodzący poziomo przez podstawę i łącznik
+        // Otwór 2mm przechodzący poziomo przez 1/3 szerokości podstawy
         translate([0, 0, base_thickness / 2])
             rotate([0, 0, mount_angle])
             translate([base_radius + mount_gap, 0, 0])
             rotate([0, 90, 0])
-            cylinder(h = 500, r = 1, center = true);
+            cylinder(h = base_diameter / 1.5, r = 1, center = true);
     }
 }
 
