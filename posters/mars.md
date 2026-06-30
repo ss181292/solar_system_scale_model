@@ -1,20 +1,12 @@
 # Mars
+Znany jest jako "czerwona planeta" z powodu wysokiej zawartości związków żelaza na jego powierzchni. Jest celem wielu misji kosmicznych w poszukiwaniu śladów życia. Posiada dwa malutkie księżyce - Fobosa i Deimosa (z greckiego strach i trwoga). Orbity księżyców są uwidocznione na modelu jako dwa okręgi wokół modelu Marsa.
 
 ## Podstawowe dane
 - **Średnica:** 6 779 km
-- **Masa:** 6,417 × 10²³ kg
-- **Odległość od Słońca:** 227 923 366 km (1,52 AU)
+- **Masa:** niecałe 11% masy Ziemi
+- **Odległość od Słońca:** 230 mln km (1,52 AU)
 - **Okres orbitalny:** 687 dni
 
-## Model w skali 1 : 10 000 000 000
-- **Wymiary modelu:** 0,68 mm
-
 ## Księżyce
-- **Fobos** - widoczny na podstawie modelu
-- **Deimos** - widoczny na podstawie modelu
-
-## Ciekawostka
-Mars znany jest jako "czerwona planeta" z powodu wysokiej zawartości związków żelaza na jego powierzchni. Jest celem wielu misji kosmicznych w poszukiwaniu śladów życia. Jego dwa księżyce mają niezwykłe kształty - przypominają patofie!
-
-## Źródło
-Facts.md, Solar System Model Data
+- **Fobos** - bliższy księżyc - około 7 mln razy lżejszy od Księżyca ziemskiego
+- **Deimos** - odleglejszy księżyc - około 49 mln razy lżejszy od Księżyca ziemskiego
