@@ -13,7 +13,7 @@
 - **Ceres** - planeta karłowata (główny obiekt w pasie)
 - Miliony asteroidi i małych ciał niebieskich
 
-## Ceres - Największa planeta karłowata w pasie
+## &#x26B3; Ceres - Największa planeta karłowata w pasie
 
 ### Podstawowe dane
 - **Średnica:** 939 km

@@ -1,6 +1,6 @@
 # Planety Karłowate
 
-## Pluton
+## &#x2647; Pluton
 
 ### Podstawowe dane
 - **Średnica:** 2 377 km

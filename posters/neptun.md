@@ -1,4 +1,4 @@
-# Neptun
+# &#x2646; Neptun
 
 ## Podstawowe dane
 - **Średnica:** 49 244 km

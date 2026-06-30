@@ -1,4 +1,4 @@
-# Uran
+# &#x2645; Uran
 
 ## Podstawowe dane
 - **Średnica:** 50 724 km

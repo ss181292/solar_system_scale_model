@@ -1,4 +1,4 @@
-# Słońce
+# &#x2609; Słońce
 
 ## Podstawowe dane
 - **Średnica:** 1 391 000 km
