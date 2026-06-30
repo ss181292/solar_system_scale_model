@@ -4,6 +4,8 @@ Ziemia - planeta na której żyjemy. Ta mała niebieska kuleczka o&nbsp;średnic
 
 Znajdujemy się 149 598 023 km czyli dokładnie 1&nbsp;AU (jednostka astronomiczna) od Słońca. W&nbsp;tej skali do Słońca mamy około 15&nbsp;m a&nbsp;do Neptuna - najdalszej planety - około 435&nbsp;m. Najdalsze znane planetoidy są oddalone o&nbsp;kilkaset do kilku tysięcy AU, czyli w&nbsp;tej skali byłyby kilka do kilkudziesięciu kilometrów stąd.
 
+Ziemia jest największą planetą skalistą w Układzie Słonecznym, jednak w porównaniu z gazowymi olbrzymami jest malutka - ponad 300 razy lżejsza od Jowisza. Księżyc ziemski jest jednak jednym z największych w Układzie Słonecznym, spośród setek, cięższe są tylko Ganimedes, Kalisto i Io (księżyce Jowisza) oraz Tytan (księżyc Saturna).
+
 ## Podstawowe dane
 - **Średnica:** 12 756 km
 - **Masa:** 5972 trylionów ton
