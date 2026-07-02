@@ -5,6 +5,8 @@ Tak jak Uran ma niebieski kolor pochodzący od wysokiej zawartości metanu. W&nb
 
 Neptun ma znanych 16 księżyców. Największy to Tryton (29% masy Księżyca ziemskiego) - jego orbita widoczna jest przy brzegu modelu. Drugi z księżyców uwidocznonych na modelu to Proteusz.
 
+Neptun jest najdalszą i&nbsp;najpóźniej odkrytą planetą, oznacza to, że od swojego odkrycia wykonał raptem trochę ponad jedno okrążenie wokół Słońca. 
+
 ## Podstawowe dane
 - **Średnica:** 49 244 km
 - **Masa:** około 17 mas Ziemi lub 5,4% masy Jowisza
