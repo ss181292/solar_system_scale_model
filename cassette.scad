@@ -16,7 +16,7 @@ hole_radius_from_center = outer_radius - 5;
 num_holes = 4;
 
 // Parametry otworów wentylacyjnych
-vent_hole_diameter = 1;
+vent_hole_diameter = 2;
 vent_hole_radius = vent_hole_diameter / 2;
 vent_rings = 5;
 vent_holes_per_ring = 20;
