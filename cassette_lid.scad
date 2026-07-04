@@ -4,7 +4,7 @@ cover_outer_radius = cover_outer_diameter / 2;
 cover_inner_diameter = 92;
 cover_inner_radius = cover_inner_diameter / 2;
 cover_top_thickness = 3;
-cover_inner_depth = 15;
+cover_inner_depth = 14;
 cover_total_height = cover_top_thickness + cover_inner_depth;
 cover_hole_diameter = 4;
 cover_hole_radius = cover_hole_diameter / 2;
@@ -18,7 +18,7 @@ num_holes = 4;
 
 // Parametry elementu mocującego (na pokrywce)
 mount_angle = 45; // pozycja kątowa wokół pokrywki, między dwoma otworami montażowymi
-mount_gap = 12; // odsunięcie od ściany pokrywki
+mount_gap = 13; // odsunięcie od ściany pokrywki
 mount_width = 22;
 mount_depth = 10;
 mount_height = 90; // wysokość końcowa, od płaskiej góry do dołu

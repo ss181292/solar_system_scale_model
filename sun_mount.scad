@@ -21,7 +21,7 @@ mount_dish_axis_x = mount_depth + sqrt(mount_concave_r*mount_concave_r - (mount_
 base_thickness = 15;
 
 // Parametry otworu montażowego
-mounting_hole_diameter = 4;
+mounting_hole_diameter = 5.5;
 mount_hole_z1 = -33;
 mount_hole_z2 = -73;
 
