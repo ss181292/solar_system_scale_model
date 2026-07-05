@@ -8,8 +8,8 @@ planet_diameter = 4.92;
 planet_radius = planet_diameter / 2;
 base_diameter = 78;
 base_thickness = 1;
-orbit_line_width = 0.4;
-orbit_height = 0.2;
+orbit_line_width = 0.5;
+orbit_height = 0.4;
 
 // Kolor Klein Blue
 color_neptune = [0/255, 47/255, 167/255];
