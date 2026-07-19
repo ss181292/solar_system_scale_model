@@ -52,7 +52,7 @@ W chwili obecnej znamy jeden księżyc noszący katalogową nazwę "S/2015 (1364
 - **Lokalizacja:** Pas Kuipera
 
 ---
-Oprócz tych pięciu znamy jeszcze 6 planet karłowatych - lista poniżej:
+Oprócz tych czterech znamy jeszcze 6 planet karłowatych - lista poniżej:
 - Gonggong
 - Quaoar
 - Ceres (znajdująca się w Głównym Pasie Planetoid pomiędzy orbitami Marsa i Jowisza)
