@@ -1,0 +1,3 @@
+# Poznaj skalę Układu Słonecznego
+
+Ten model Układu Słonecznego znajduje się w miejscowości Żółwin na ul. Łąkowej ([Google Maps](https://www.google.com/maps/place/52%C2%B006'31.8%22N+20%C2%B043'59.5%22E)). Składa się z modeli głównych ciał Układu Słonecznego z zachowaniem skali rozmiarów i odległości. Każdy metr, który pokonasz odpowiada dokładnie 10 milionom kilometrów w przestrzeni kosmicznej. Każdy centymetr na modelu to 100 000 kilometrów, a każdy milimetr to 10 000 kilometrów. Przechodząc od modelu Słońca do modeli kolejnych planet możesz doświadczyć ogromu pustki wypełniającej nasz układ Słoneczny i cały kosmos.
