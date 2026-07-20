@@ -7,4 +7,4 @@ Posiada dwa malutkie księżyce - Fobosa i&nbsp;Deimosa (z&nbsp;j.&nbsp;greckieg
 - **Średnica:** 6 779 km
 - **Masa:** niecałe 11% masy Ziemi
 - **Odległość od Słońca:** 230 mln km (1,52 AU)
-- **Okres orbitalny:** 687 dni
+- **Okres orbitalny:** 1 rok 322 dni

@@ -7,4 +7,4 @@ Dotychczas odwiedziły go tylko trzy sondy. Pierwsza z&nbsp;nich – Mariner&nbs
 - **Średnica:** 4 879 km
 - **Masa:** około 5,5% masy Ziemi
 - **Odległość od Słońca:** 59 mln km (0,39 AU)
-- **Okres orbitalny:** 87,97 dni
+- **Okres orbitalny:** 87 dni 23 godziny

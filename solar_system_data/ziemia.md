@@ -10,4 +10,4 @@ Ziemia jest największą planetą skalistą w Układzie Słonecznym, jednak w po
 - **Średnica:** 12 756 km
 - **Masa:** 5972 trylionów ton
 - **Odległość od Słońca:** 149,6 mln km (1,00&nbsp;AU)
-- **Okres orbitalny:** 365,256 dni
+- **Okres orbitalny:** 365 dni 6 godzin

@@ -21,5 +21,5 @@ Ceres składa się głównie ze skał i lodu, z czego ponad 1/4 to zamarznięta 
 - **Średnica:** 939 km
 - **Masa:** około 40% masy całego Głównego Pasa Planetoid i około 1,3% masy Księżyca ziemskiego
 - **Odległość od Słońca:** 414 mln km (2,77 AU)
-- **Okres orbitalny:** 4,6 lat
+- **Okres orbitalny:** 4 lata 7 miesięcy 6 dni
 

@@ -10,3 +10,4 @@ Badana przez liczne sondu kosmiczne. Pierwszą była radziecka sonda Wenera 1&nb
 - **Masa:** około 81% masy Ziemi
 - **Odległość od Słońca:** 108 mln km (0,72 AU)
 - **Temperatura powierzchni:** ~464°C
+- **Okres orbitalny:** 224 dni 17 godzin

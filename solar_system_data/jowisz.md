@@ -11,4 +11,4 @@ Jowisz posiada ponad 100 odkrytych księżyców, z&nbsp;czego 4 największe (Io,
 - **Średnica:** 139 772 km
 - **Masa:** około 318 mas Ziemi lub 1/1047 masy Słońca
 - **Odległość od Słońca:** 778 mln km (5,2 AU)
-- **Okres orbitalny:** 11,86 lat
+- **Okres orbitalny:** 11 lat 10 miesięcy 10 dni
