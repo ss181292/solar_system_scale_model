@@ -2,7 +2,7 @@
 
 ## Parametry skali
 
-**Skala modelu:** 1 : 10 000 000 000 (1 : 10¹⁰)
+**Skala modelu:** 1&nbsp;:&nbsp;10&nbsp;000&nbsp;000&nbsp;000 (1&nbsp;:&nbsp;10¹⁰)
 
 Przy tej skali całą Układ Słoneczny (od Słońca do Neptuna) zmieści się na odcinku 450 metrów:
 - Słońce: 0 m
