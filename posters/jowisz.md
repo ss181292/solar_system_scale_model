@@ -1,6 +1,6 @@
 # &#x2643;&nbsp;Jowisz
 
-Największa planeta Układu Słonecznego&nbsp;i gazowy olbrzym. Jest 318 razy bardziej masywny niż Ziemia. Posiada ponad 100 odkrytych księżyców,&nbsp;w tym 4 największe odkryte przez Galileusza&nbsp;w XVII w. Słynna Wielka Czerwona Plama&nbsp;to burza większa niż cała Ziemia trwająca co najmniej 350 lat&nbsp;z wiatrami dochodzącymi&nbsp;do 500 km/h.
+Największa planeta Układu Słonecznego i&nbsp;gazowy olbrzym. Jest 318 razy bardziej masywny niż Ziemia. Posiada ponad 100 odkrytych księżyców, w&nbsp;tym 4 największe odkryte przez Galileusza w&nbsp;XVII w. Słynna Wielka Czerwona Plama to&nbsp;burza większa niż cała Ziemia trwająca co najmniej 350 lat z&nbsp;wiatrami dochodzącymi do 500 km/h.
 
 **Średnica:** 139 772 km  
 **Masa:** 318 mas Ziemi  
