@@ -1,4 +1,4 @@
-# Ziemia
+# ♁ Ziemia
 
 Nasza planeta i jedyne znane miejsce na którym występuje życie. Największa planeta skalista w Układzie Słonecznym. Księżyc ziemski należy do największych w całym Układzie Słonecznym. Odległa 150 milionów kilometrów od Słońca - odległość ta jest zanywana Jednostką Astronomiczną (1 AU).
 

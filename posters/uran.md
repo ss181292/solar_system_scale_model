@@ -1,4 +1,4 @@
-# Uran
+# ♅ Uran
 
 Siódma planeta Układu Słonecznego i gazowy olbrzym odkryty dopiero w 1781 roku. Niebieski kolor pochodzi od metanu w atmosferze. Wyjątkowy ze względu na ogromne nachylenie osi obrotu - 82° do płaszczyzny orbity. Posiada 29 znanych księżyców.
 
