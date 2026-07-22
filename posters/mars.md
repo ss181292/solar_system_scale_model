@@ -1,4 +1,4 @@
-# ♂ Mars
+# &#x2642; Mars
 
 Czwarta od Słońca planeta Układu Słonecznego. Czerwona ze względu na wysoką zawartość związków żelaza na powierzchni. Posiada dwa małe księżyce: Fobosa i Deimosa. Cel wielu misji kosmicznych ze względu na potencjalne ślady wody w przeszłości.
 

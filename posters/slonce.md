@@ -1,4 +1,4 @@
-# ☉ Słońce
+# &#x2609; Słońce
 
 Nasza gwiazda, wokół której krąży Ziemia i wszystkie planety Układu Słonecznego. Powstała około 4,5 miliardów lat temu i jest gwiazdą znajdującą się w połowie swojego życia.
 
