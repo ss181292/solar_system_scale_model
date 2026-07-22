@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>🌍 Układ Słoneczny w Skali 1&nbsp;:&nbsp;10&nbsp;000&nbsp;000&nbsp;000</h1>
+        <h1>Układ Słoneczny w Skali 1&nbsp;:&nbsp;10&nbsp;000&nbsp;000&nbsp;000</h1>
         <p>Interaktywny model edukacyjny planet naszego systemu</p>
         <p style="text-align: center; color: #ffd700; padding: 0.5rem; background: rgba(255, 215, 0, 0.1); margin-top: 1rem; border-radius: 4px;">⚠️ Strona w budowie</p>
     </header>
@@ -120,30 +120,5 @@
         <p>Projekt edukacyjny - wszystkie ilustracje pochodzą z NASA i Wikimedia Commons</p>
         <p>Kontakt: <a href="mailto:kontakt@orbity.pl">kontakt@orbity.pl</a></p>
     </footer>
-
-    <script>
-        let lastScrollTop = 0;
-        const header = document.querySelector('header');
-        const scrollThreshold = 50;
-
-        window.addEventListener('scroll', function() {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (scrollTop > scrollThreshold) {
-                if (scrollTop > lastScrollTop) {
-                    // Scrolling down
-                    header.classList.add('hidden');
-                } else {
-                    // Scrolling up
-                    header.classList.remove('hidden');
-                }
-            } else {
-                // At the top
-                header.classList.remove('hidden');
-            }
-
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-        });
-    </script>
 </body>
 </html>
