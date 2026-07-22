@@ -10,4 +10,4 @@ Saturn posiada też największą liczbę księżyców spośród wszystkich plane
 - **Masa:** około 95 mas Ziemi lub 30% masy Jowisza
 - **Odległość od Słońca:** 1,4 mld km (9,58 AU)
 - **Okres orbitalny:** 29 lat 5 miesięcy 12 dni
-- **Pierścienie:** rozciągają się na średnicę od około 67&nbsp;tys.&nbsp;km od środka Saturna do około 300&nbsp;tys.&nbsp;km, jednak ich najmasywniejsza część (pierścienie A i&nbsp;B) zajmują od przestrzeń od 92&nbsp;tys.&nbsp;km do 137&nbsp;tys.&nbsp;km od środka.
+- **Pierścienie:** rozciągają się na odległość od około 67&nbsp;tys.&nbsp;km od środka Saturna do około 300&nbsp;tys.&nbsp;km, jednak ich najmasywniejsza część (pierścienie A i&nbsp;B) zajmują od przestrzeń od 92&nbsp;tys.&nbsp;km do 137&nbsp;tys.&nbsp;km od środka.
