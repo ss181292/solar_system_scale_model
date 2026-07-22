@@ -1,6 +1,6 @@
-# &#x2609; Słońce
+# &#x2609;&nbsp;Słońce
 
-Nasza gwiazda, wokół której krąży Ziemia i wszystkie planety Układu Słonecznego. Powstała około 4,5 miliardów lat temu i jest gwiazdą znajdującą się w połowie swojego życia.
+Nasza gwiazda, wokół której krąży Ziemia&nbsp;i wszystkie planety Układu Słonecznego. Powstała około 4,5 miliardów lat temu&nbsp;i jest gwiazdą znajdującą się&nbsp;w połowie swojego życia.
 
 **Średnica:** 1 391 000 km  
 **Masa:** 333 tysiące mas Ziemi  

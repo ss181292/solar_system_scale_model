@@ -1,6 +1,6 @@
-# &#x2646; Neptun
+# &#x2646;&nbsp;Neptun
 
-Ósma i ostatnia planeta Układu Słonecznego. Najmniejszy gazowy olbrzym jeśli chodzi o rozmiar, ale cięższy od Urana. Odkryty w 1846 roku - jego pozycja została przewidziana matematycznie. Niebieski kolor również zawdzięcza zawartości metanu w atmosferze. Na powierzchni wieją potężne huragany ze wiatrami przekraczającymi 2000 km/h. Odwiedzony tylko przez sondę Voyager 2 w 1989 roku.
+Ósma&nbsp;i ostatnia planeta Układu Słonecznego. Najmniejszy gazowy olbrzym jeśli chodzi&nbsp;o rozmiar, ale cięższy od Urana. Odkryty&nbsp;w 1846 roku - jego pozycja została przewidziana matematycznie. Niebieski kolor również zawdzięcza zawartości metanu&nbsp;w atmosferze.&nbsp;Na powierzchni wieją potężne huragany&nbsp;ze wiatrami przekraczającymi 2000 km/h. Odwiedzony tylko przez sondę Voyager 2&nbsp;w 1989 roku.
 
 **Średnica:** 49 244 km  
 **Masa:** 17 mas Ziemi  

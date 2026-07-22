@@ -1,6 +1,6 @@
-# &#x263F; Merkury
+# &#x263F;&nbsp;Merkury
 
-Najbliższa Słońcu i najmniejsza planeta Układu Słonecznego. Powierzchnia pokryta kraterami, bez atmosfery. Temperatura wahająca się od -173°C w cieniu do 427°C na oświetlonych obszarach. Najmniej zbadana planeta skalista w Układzie Słonecznym.
+Najbliższa Słońcu&nbsp;i najmniejsza planeta Układu Słonecznego. Powierzchnia pokryta kraterami, bez atmosfery. Temperatura wahająca się od -173°C&nbsp;w cieniu&nbsp;do 427°C&nbsp;na oświetlonych obszarach. Najmniej zbadana planeta skalista&nbsp;w Układzie Słonecznym.
 
 **Średnica:** 4 879 km  
 **Masa:** 5,5% masy Ziemi  
