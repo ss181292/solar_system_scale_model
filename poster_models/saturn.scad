@@ -404,7 +404,7 @@ module body_text() {
     color(color_black) {
         translate([14.0000, 156.0000, 2.0]) linear_extrude(height = 0.3) text("♄", size = 9.8778, font = "Liberation Sans:style=Bold", halign = "left", valign = "top");
         translate([23.4083, 156.0000, 2.0]) linear_extrude(height = 0.3) text("Saturn", size = 5.6444, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([14.0000, 147.5333, 2.0]) linear_extrude(height = 0.3) text("Druga co wielkości planeta i gazowy", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 147.5333, 2.0]) linear_extrude(height = 0.3) text("Druga co do wielkości planeta i gazowy", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 142.7708, 2.0]) linear_extrude(height = 0.3) text("olbrzym znany od starożytności.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 138.0083, 2.0]) linear_extrude(height = 0.3) text("Słynie z widocznego systemu", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 133.2458, 2.0]) linear_extrude(height = 0.3) text("pierścieni - jedynego tak", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");

@@ -4,7 +4,7 @@ Poza orbitą Neptuna zaczynają się obrzeża Układu Słonecznego. Obiekty w ty
 W chwili obecnej znanych jest ponad 5000 obiektów transneptunowych i wciąż poznawane są nowe. Wśród obiektów transneptunowych znaleźliśmy dotychczas kilka szczególnie dużych obiektów.
 
 ## &#x2647; Pluton
-Pierwszym odkrytym obiektem transneptunowym był Pluton. Na początku nazywany był dziewiątą planetą Układu Słonecznego. Po odkryciu odleglejszej i ciężej od niego Eris, został stworzony nowy termin "planeta karłowata", w którym znalazły się Pluton, Eris i Ceres oraz inne podobne obiekty.
+Pierwszym odkrytym obiektem transneptunowym był Pluton. Na początku nazywany był dziewiątą planetą Układu Słonecznego. Po odkryciu odleglejszej i masywniejszej od niego Eris, został stworzony nowy termin "planeta karłowata", w którym znalazły się Pluton, Eris i Ceres oraz inne podobne obiekty.
 
 Pluton posiada pięć księżyców, z czego największy Charon ma tylko o połowę mniejszą średnicę od niego samego.
 
