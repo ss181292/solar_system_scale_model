@@ -80,6 +80,33 @@ module mount_tab() {
     }
 }
 
+// Zaokrąglenie narożnika u dołu mount_fill (między poziomą ścianą z=-cover_total_height
+// a nachyloną ścianą mount_tab); walec o r=3mm styczny do obu powierzchni
+module mount_fill_fillet() {
+    fillet_r   = 3;
+    fillet_z_c = -cover_total_height - fillet_r;
+    // środek walca 3mm poza bryłą mount_tab (x_local = -fillet_r)
+    fillet_x_c = (-fillet_r + sin(mount_tilt) * fillet_z_c) / cos(mount_tilt);
+    // narożnik styku dolnej ściany mount_fill i ściany mount_tab
+    corner_x   = -cover_total_height * tan(mount_tilt);
+    corner_z   = -cover_total_height;
+
+    difference() {
+        // wypełnienie kąta: hull(walec, narożnik) daje trójkąt z łukiem jako podstawą
+        hull() {
+            translate([fillet_x_c, -mount_width/2, fillet_z_c])
+                rotate([-90, 0, 0])
+                    cylinder(r = fillet_r, h = mount_width, $fn = 32);
+            translate([corner_x, -mount_width/2, corner_z])
+                cube([0.01, mount_width, 0.01]);
+        }
+        // odjęcie walca tworzy wklęsłą powierzchnię zaokrąglenia
+        translate([fillet_x_c, -mount_width/2, fillet_z_c])
+            rotate([-90, 0, 0])
+                cylinder(r = fillet_r + 0.01, h = mount_width + 1, $fn = 32);
+    }
+}
+
 // Wypełnienie pomiędzy elementem mocującym a ścianą pokrywki (tylko na wysokości,
 // na której ścianka pokrywki fizycznie istnieje)
 module mount_fill() {
@@ -140,5 +167,6 @@ translate([0, 120, 0]) {
         mirror([0, 0, 1]) {
             mount_tab();
             mount_fill();
+            mount_fill_fillet();
         }
 }
