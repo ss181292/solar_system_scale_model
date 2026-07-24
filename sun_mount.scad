@@ -59,6 +59,27 @@ module mount_fill_mount() {
     }
 }
 
+module mount_fill_fillet() {
+    fillet_r   = 3;
+    fillet_z_c = -base_thickness - fillet_r;
+    fillet_x_c = (-fillet_r + sin(mount_tilt) * fillet_z_c) / cos(mount_tilt);
+    corner_x   = -base_thickness * tan(mount_tilt);
+    corner_z   = -base_thickness;
+
+    difference() {
+        hull() {
+            translate([fillet_x_c, -mount_width/2, fillet_z_c])
+                rotate([-90, 0, 0])
+                    cylinder(r = fillet_r, h = mount_width, $fn = 32);
+            translate([corner_x, -mount_width/2, corner_z])
+                cube([0.01, mount_width, 0.01]);
+        }
+        translate([fillet_x_c, -mount_width/2, fillet_z_c])
+            rotate([-90, 0, 0])
+                cylinder(r = fillet_r + 0.01, h = mount_width + 1, $fn = 32);
+    }
+}
+
 // ===== Moduły pomocnicze =====
 module mount_inner_boss(z) {
     translate([-mount_inner_boss_len, 0, z]) rotate([0, 90, 0])
@@ -148,6 +169,7 @@ color(color_mount) {
                 rotate([0, 0, mount_angle])
                     translate([base_radius + mount_gap, 0, 0]) {
                         mount_fill_mount();
+                        mount_fill_fillet();
                     }
         }
 
