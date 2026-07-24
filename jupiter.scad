@@ -42,6 +42,8 @@ for (moon = moons) {
 // Skala: 13.98 mm model = 98 mm na zdjęciu
 planet_center_z = planet_radius;
 scale_factor = planet_diameter / 98;
+planet_tilt = 18;     // nachylenie osi planety w stopniach
+planet_rotation = 110; // obrót wokół osi biegunowej (dodatni = w lewo)
 
 // Strefy wg wymiarów ze zdjęcia (od góry):
 // 0-25mm: żółta, 25-35mm: biała, 35-44mm: pomarańczowa, 44-59mm: biała
@@ -55,82 +57,84 @@ zone_5_height = (68 - 59) * scale_factor;          // 59-68mm żółta
 zone_6_height = (74 - 68) * scale_factor;          // 68-74mm biała
 zone_7_height = (98 - 74) * scale_factor;          // 74-98mm żółta
 
-// Strefa 1 (góra) - żółta
-color(color_yellow)
-    intersection() {
-        translate([0, 0, planet_center_z])
-            sphere(r = planet_radius, $fn = 100);
-        translate([-1000, -1000, planet_center_z + planet_radius - zone_1_height])
-            cube([2000, 2000, zone_1_height]);
-    }
-
-// Strefa 2 - biała
-color(color_white)
-    intersection() {
-        translate([0, 0, planet_center_z])
-            sphere(r = planet_radius, $fn = 100);
-        translate([-1000, -1000, planet_center_z + planet_radius - zone_1_height - zone_2_height])
-            cube([2000, 2000, zone_2_height]);
-    }
-
-// Strefa 3 - pomarańczowa
-color(color_orange)
-    intersection() {
-        translate([0, 0, planet_center_z])
-            sphere(r = planet_radius, $fn = 100);
-        translate([-1000, -1000, planet_center_z + planet_radius - zone_1_height - zone_2_height - zone_3_height])
-            cube([2000, 2000, zone_3_height]);
-    }
-
-// Strefa 4 - biała
-color(color_white)
-    intersection() {
-        translate([0, 0, planet_center_z])
-            sphere(r = planet_radius, $fn = 100);
-        translate([-1000, -1000, planet_center_z + planet_radius - zone_1_height - zone_2_height - zone_3_height - zone_4_height])
-            cube([2000, 2000, zone_4_height]);
-    }
-
-// Strefa 5 - żółta
-color(color_yellow)
-    intersection() {
-        translate([0, 0, planet_center_z])
-            sphere(r = planet_radius, $fn = 100);
-        translate([-1000, -1000, planet_center_z + planet_radius - zone_1_height - zone_2_height - zone_3_height - zone_4_height - zone_5_height])
-            cube([2000, 2000, zone_5_height]);
-    }
-
-// Strefa 6 - biała
-color(color_white)
-    intersection() {
-        translate([0, 0, planet_center_z])
-            sphere(r = planet_radius, $fn = 100);
-        translate([-1000, -1000, planet_center_z + planet_radius - zone_1_height - zone_2_height - zone_3_height - zone_4_height - zone_5_height - zone_6_height])
-            cube([2000, 2000, zone_6_height]);
-    }
-
 // Wielka Czerwona Plama - wymiary ze zdjęcia
 grrs_width = 10 * scale_factor;
 grrs_height = 7 * scale_factor;
 grrs_center_from_top = 69 * scale_factor;
-grrs_z = planet_center_z + planet_radius - grrs_center_from_top;
+grrs_z_local = planet_radius - grrs_center_from_top;
+grrs_surface_distance = sqrt(planet_radius * planet_radius - grrs_z_local * grrs_z_local);
+grrs_rotation_angle = atan2(grrs_surface_distance, grrs_z_local);
 
-// Strefa 7 (dół) - żółta
-color(color_yellow)
-    intersection() {
-        translate([0, 0, planet_center_z])
+// Moduł planety ze środkiem w początku układu współrzędnych
+module planet() {
+    // Strefa 1 (góra) - żółta
+    color(color_yellow)
+        intersection() {
             sphere(r = planet_radius, $fn = 100);
-        translate([-1000, -1000, planet_center_z - planet_radius])
-            cube([2000, 2000, zone_7_height]);
-    }
+            translate([-1000, -1000, planet_radius - zone_1_height])
+                cube([2000, 2000, zone_1_height]);
+        }
 
-// Wielka Czerwona Plama - eliptyczny element na boku sfery, styczny do powierzchni
-grrs_surface_distance = sqrt(planet_radius * planet_radius - (grrs_z - planet_center_z) * (grrs_z - planet_center_z));
-grrs_rotation_angle = atan2(grrs_surface_distance, grrs_z - planet_center_z);
+    // Strefa 2 - biała
+    color(color_white)
+        intersection() {
+            sphere(r = planet_radius, $fn = 100);
+            translate([-1000, -1000, planet_radius - zone_1_height - zone_2_height])
+                cube([2000, 2000, zone_2_height]);
+        }
 
-color(color_orange)
-    translate([grrs_surface_distance, 0, grrs_z])
-        rotate(grrs_rotation_angle, [0, 1, 0])
-            linear_extrude(height = 0.03, center = true)
-                scale([grrs_height / 2, grrs_width / 2, 1])
-                    circle(r = 1, $fn = 60);
+    // Strefa 3 - pomarańczowa
+    color(color_orange)
+        intersection() {
+            sphere(r = planet_radius, $fn = 100);
+            translate([-1000, -1000, planet_radius - zone_1_height - zone_2_height - zone_3_height])
+                cube([2000, 2000, zone_3_height]);
+        }
+
+    // Strefa 4 - biała
+    color(color_white)
+        intersection() {
+            sphere(r = planet_radius, $fn = 100);
+            translate([-1000, -1000, planet_radius - zone_1_height - zone_2_height - zone_3_height - zone_4_height])
+                cube([2000, 2000, zone_4_height]);
+        }
+
+    // Strefa 5 - żółta
+    color(color_yellow)
+        intersection() {
+            sphere(r = planet_radius, $fn = 100);
+            translate([-1000, -1000, planet_radius - zone_1_height - zone_2_height - zone_3_height - zone_4_height - zone_5_height])
+                cube([2000, 2000, zone_5_height]);
+        }
+
+    // Strefa 6 - biała
+    color(color_white)
+        intersection() {
+            sphere(r = planet_radius, $fn = 100);
+            translate([-1000, -1000, planet_radius - zone_1_height - zone_2_height - zone_3_height - zone_4_height - zone_5_height - zone_6_height])
+                cube([2000, 2000, zone_6_height]);
+        }
+
+    // Strefa 7 (dół) - żółta
+    color(color_yellow)
+        intersection() {
+            sphere(r = planet_radius, $fn = 100);
+            translate([-1000, -1000, -planet_radius])
+                cube([2000, 2000, zone_7_height]);
+        }
+
+    // Wielka Czerwona Plama - eliptyczny element na boku sfery, styczny do powierzchni
+    color(color_orange)
+        translate([grrs_surface_distance, 0, grrs_z_local])
+            rotate(grrs_rotation_angle, [0, 1, 0])
+                linear_extrude(height = 0.03, center = true)
+                    scale([grrs_height / 2, grrs_width / 2, 1])
+                        circle(r = 1, $fn = 60);
+}
+
+// Planeta nachylona o planet_tilt stopni, środek zachowany
+// Obrót wokół osi biegunowej (Z) przed nachyleniem — zachowuje lokalną oś biegunów
+translate([0, 0, planet_center_z])
+    rotate([planet_tilt, 0, 0])
+        rotate([0, 0, planet_rotation])
+            planet();
