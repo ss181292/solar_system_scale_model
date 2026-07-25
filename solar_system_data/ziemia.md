@@ -2,7 +2,7 @@
 
 Planeta na której żyjemy. Ta mała niebieska kuleczka o&nbsp;średnicy 1,3&nbsp;mm to właśnie ona. Okrąg, który widać na obrzeżu modelu to orbita Księżyca.
 
-Znajdujemy się około 150 mln&nbsp;km od Słońca. Wielkość tę astronomowie nazywają jednostką astronomiczą (AU od astronomical unit). W&nbsp;tej skali jest to 15&nbsp;m. Do Neptuna - najdalszej planety - musimy przejść 435&nbsp;m. Do najdalszych znanych planetoid musielibyśmy przejść kilkadziesiąt kilometrów.
+Znajdujemy się około 150 mln&nbsp;km od Słońca (dokładnie 149 597 870 700 m). Wielkość tę astronomowie nazywają jednostką astronomiczą (AU od astronomical unit). W&nbsp;tej skali jest to 15&nbsp;m. Do Neptuna - najdalszej planety - musimy przejść 435&nbsp;m. Do najdalszych znanych planetoid musielibyśmy przejść kilkadziesiąt kilometrów.
 
 Ziemia jest największą i&nbsp;najbardziej masywną planetą skalistą w Układzie Słonecznym, jednak w porównaniu z gazowymi olbrzymami jest malutka - niemal 11 razy mniejsza i&nbsp;ponad 300 razy mniej masywna od Jowisza. Księżyc ziemski jest jednak jednym z największych w Układzie Słonecznym, spośród setek księżyców, masywniejsze są tylko Ganimedes, Kalisto i Io (księżyce Jowisza) oraz Tytan (księżyc Saturna).
 
