@@ -4,4 +4,6 @@ Region pełen asteroidów między orbitami Marsa a&nbsp;Jowisza zawierający mil
 
 **Liczba znanych obiektów:** ponad 1 milion  
 **Całkowita masa:** ~3% masy Księżyca  
-**Największe obiekty:** Ceres, Westa, Pallas, Hygiea
+**Największe obiekty:** Ceres, Westa, Pallas, Hygiea  
+**Na wschód:** Mars, 19 m  
+**Na zachód:** Jowisz, 36 m

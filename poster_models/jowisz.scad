@@ -422,6 +422,10 @@ module body_text() {
         translate([14.0000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("Okres orbitalny:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
         translate([59.9000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("11 lat 10 miesięcy", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("10 dni", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[20.0000, 72.6965], [16.7000, 72.6965], [16.7000, 73.3089], [14.0000, 72.2153], [16.7000, 71.1217], [16.7000, 71.7341], [20.0000, 71.7341]]);
+        translate([22.5000, 74.1556, 2.0]) linear_extrude(height = 0.3) text("Pas Planetoid, 36 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[14.0000, 67.9340], [17.3000, 67.9340], [17.3000, 68.5464], [20.0000, 67.4528], [17.3000, 66.3592], [17.3000, 66.9716], [14.0000, 66.9716]]);
+        translate([22.5000, 69.3931, 2.0]) linear_extrude(height = 0.3) text("Saturn, 66 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
     }
 }
 

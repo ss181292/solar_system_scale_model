@@ -409,18 +409,23 @@ module body_text() {
         translate([14.0000, 138.0083, 2.0]) linear_extrude(height = 0.3) text("planeta skalista w Układzie", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 133.2458, 2.0]) linear_extrude(height = 0.3) text("Słonecznym. Księżyc ziemski należy", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 128.4833, 2.0]) linear_extrude(height = 0.3) text("do największych w całym Układzie", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 123.7208, 2.0]) linear_extrude(height = 0.3) text("Słonecznym. Odległa 150 milionów", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 118.9583, 2.0]) linear_extrude(height = 0.3) text("kilometrów od Słońca - odległość ta", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 114.1958, 2.0]) linear_extrude(height = 0.3) text("jest nazywana Jednostką Astronomiczną", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 109.4333, 2.0]) linear_extrude(height = 0.3) text("(1 AU).", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 97.9681, 2.0]) linear_extrude(height = 0.3) text("Średnica:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([41.0000, 97.9681, 2.0]) linear_extrude(height = 0.3) text("12 756 km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 93.2056, 2.0]) linear_extrude(height = 0.3) text("Masa:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([30.2000, 93.2056, 2.0]) linear_extrude(height = 0.3) text("5 972 trylionów ton", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("Odległość od Słońca:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([70.7000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("149,6 mln km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("Okres orbitalny:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([59.9000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("365 dni 6 godzin", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 123.7208, 2.0]) linear_extrude(height = 0.3) text("Słonecznym. Odległa około 150", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 118.9583, 2.0]) linear_extrude(height = 0.3) text("milionów kilometrów od Słońca.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 114.1958, 2.0]) linear_extrude(height = 0.3) text("Dokładna wartość odległość Ziemi od", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 109.4333, 2.0]) linear_extrude(height = 0.3) text("Słońca jest nazywana Jednostką", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 104.6708, 2.0]) linear_extrude(height = 0.3) text("Astronomiczną (1 AU).", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 93.2056, 2.0]) linear_extrude(height = 0.3) text("Średnica:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
+        translate([41.0000, 93.2056, 2.0]) linear_extrude(height = 0.3) text("12 756 km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("Masa:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
+        translate([30.2000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("5 972 trylionów ton", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("Odległość od Słońca:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
+        translate([70.7000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("149,6 mln km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("Okres orbitalny:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
+        translate([59.9000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("365 dni 6 godzin", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[20.0000, 72.6965], [16.7000, 72.6965], [16.7000, 73.3089], [14.0000, 72.2153], [16.7000, 71.1217], [16.7000, 71.7341], [20.0000, 71.7341]]);
+        translate([22.5000, 74.1556, 2.0]) linear_extrude(height = 0.3) text("Wenus, 4 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[14.0000, 67.9340], [17.3000, 67.9340], [17.3000, 68.5464], [20.0000, 67.4528], [17.3000, 66.3592], [17.3000, 66.9716], [14.0000, 66.9716]]);
+        translate([22.5000, 69.3931, 2.0]) linear_extrude(height = 0.3) text("Mars, 8 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
     }
 }
 

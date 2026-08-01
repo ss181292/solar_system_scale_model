@@ -5,4 +5,6 @@ Najbliższa Słońcu i&nbsp;najmniejsza planeta Układu Słonecznego. Powierzchn
 **Średnica:** 4 879 km  
 **Masa:** 5,5% masy Ziemi  
 **Odległość od Słońca:** 59 mln km  
-**Okres orbitalny:** 87 dni 23 godziny
+**Okres orbitalny:** 87 dni 23 godziny  
+**Na wschód:** Słońce, 6 m  
+**Na zachód:** Wenus, 5 m

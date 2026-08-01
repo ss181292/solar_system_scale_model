@@ -5,4 +5,6 @@ Największa planeta Układu Słonecznego i&nbsp;gazowy olbrzym. Jest 318 razy ba
 **Średnica:** 139 772 km  
 **Masa:** 318 mas Ziemi  
 **Odległość od Słońca:** 778 mln km  
-**Okres orbitalny:** 11 lat 10 miesięcy 10 dni
+**Okres orbitalny:** 11 lat 10 miesięcy 10 dni  
+**Na wschód:** Pas Planetoid, 36 m  
+**Na zachód:** Saturn, 66 m

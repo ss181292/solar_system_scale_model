@@ -420,6 +420,10 @@ module body_text() {
         translate([14.0000, 93.2056, 2.0]) linear_extrude(height = 0.3) text("km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("Okres orbitalny:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
         translate([59.9000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("84 lata", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[14.0000, 82.2215], [17.3000, 82.2215], [17.3000, 82.8339], [20.0000, 81.7403], [17.3000, 80.6467], [17.3000, 81.2591], [14.0000, 81.2591]]);
+        translate([22.5000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("Saturn, 140 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[20.0000, 77.4590], [16.7000, 77.4590], [16.7000, 78.0714], [14.0000, 76.9778], [16.7000, 75.8842], [16.7000, 76.4966], [20.0000, 76.4966]]);
+        translate([22.5000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("Neptun, 160 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
     }
 }
 

@@ -5,4 +5,6 @@ Druga co wielkości planeta i&nbsp;gazowy olbrzym znany od starożytności. Sły
 **Średnica:** 116 460 km  
 **Masa:** 95 mas Ziemi  
 **Odległość od Słońca:** 1,4 miliarda km  
-**Okres orbitalny:** 29 lat 5 miesięcy 12 dni
+**Okres orbitalny:** 29 lat 5 miesięcy 12 dni  
+**Na wschód:** Jowisz, 66 m  
+**Na zachód:** Uran, 140 m

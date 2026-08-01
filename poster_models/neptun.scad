@@ -406,25 +406,26 @@ module body_text() {
         translate([23.4083, 156.0000, 2.0]) linear_extrude(height = 0.3) text("Neptun", size = 5.6444, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
         translate([14.0000, 147.5333, 2.0]) linear_extrude(height = 0.3) text("Ósma i ostatnia planeta Układu", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 142.7708, 2.0]) linear_extrude(height = 0.3) text("Słonecznego. Najmniejszy gazowy", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 138.0083, 2.0]) linear_extrude(height = 0.3) text("olbrzym jeśli chodzi o rozmiar, ale", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 133.2458, 2.0]) linear_extrude(height = 0.3) text("cięższy od Urana. Odkryty w 1846 roku", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 128.4833, 2.0]) linear_extrude(height = 0.3) text("- jego pozycja została przewidziana", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 123.7208, 2.0]) linear_extrude(height = 0.3) text("matematycznie. Niebieski kolor", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 118.9583, 2.0]) linear_extrude(height = 0.3) text("również zawdzięcza zawartości metanu", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 114.1958, 2.0]) linear_extrude(height = 0.3) text("w atmosferze. Na powierzchni wieją", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 109.4333, 2.0]) linear_extrude(height = 0.3) text("potężne huragany ze wiatrami", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 104.6708, 2.0]) linear_extrude(height = 0.3) text("przekraczającymi 2000 km/h.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 99.9083, 2.0]) linear_extrude(height = 0.3) text("Odwiedzony tylko przez sondę Voyager", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 95.1458, 2.0]) linear_extrude(height = 0.3) text("2 w 1989 roku.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("Średnica:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([41.0000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("49 244 km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("Masa:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([30.2000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("17 mas Ziemi", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 74.1556, 2.0]) linear_extrude(height = 0.3) text("Odległość od Słońca:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([70.7000, 74.1556, 2.0]) linear_extrude(height = 0.3) text("4,5 miliarda", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 69.3931, 2.0]) linear_extrude(height = 0.3) text("km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 64.6306, 2.0]) linear_extrude(height = 0.3) text("Okres orbitalny:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([59.9000, 64.6306, 2.0]) linear_extrude(height = 0.3) text("165 lat", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 138.0083, 2.0]) linear_extrude(height = 0.3) text("olbrzym, ale cięższy od Urana.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 133.2458, 2.0]) linear_extrude(height = 0.3) text("Odkryty w 1846 roku - jego pozycję", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 128.4833, 2.0]) linear_extrude(height = 0.3) text("przewidziano matematycznie. Niebieski", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 123.7208, 2.0]) linear_extrude(height = 0.3) text("kolor zawdzięcza metanowi", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 118.9583, 2.0]) linear_extrude(height = 0.3) text("w atmosferze. Wieją tu najsilniejsze", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 114.1958, 2.0]) linear_extrude(height = 0.3) text("w Układzie Słonecznym huragany,", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 109.4333, 2.0]) linear_extrude(height = 0.3) text("z wiatrami ponad 2000 km/h.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 97.9681, 2.0]) linear_extrude(height = 0.3) text("Średnica:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
+        translate([41.0000, 97.9681, 2.0]) linear_extrude(height = 0.3) text("49 244 km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 93.2056, 2.0]) linear_extrude(height = 0.3) text("Masa:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
+        translate([30.2000, 93.2056, 2.0]) linear_extrude(height = 0.3) text("17 mas Ziemi", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("Odległość od Słońca:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
+        translate([70.7000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("4,5 miliarda", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("Okres orbitalny:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
+        translate([59.9000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("165 lat", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[14.0000, 72.6965], [17.3000, 72.6965], [17.3000, 73.3089], [20.0000, 72.2153], [17.3000, 71.1217], [17.3000, 71.7341], [14.0000, 71.7341]]);
+        translate([22.5000, 74.1556, 2.0]) linear_extrude(height = 0.3) text("Uran, 160 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[20.0000, 67.9340], [16.7000, 67.9340], [16.7000, 68.5464], [14.0000, 67.4528], [16.7000, 66.3592], [16.7000, 66.9716], [20.0000, 66.9716]]);
+        translate([22.5000, 69.3931, 2.0]) linear_extrude(height = 0.3) text("Obrzeża Układu, 5 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
     }
 }
 

@@ -407,24 +407,24 @@ module body_text() {
         translate([14.0000, 147.5333, 2.0]) linear_extrude(height = 0.3) text("Druga planeta Układu Słonecznego", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 142.7708, 2.0]) linear_extrude(height = 0.3) text("i najjaśniejszy obiekt na niebie", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 138.0083, 2.0]) linear_extrude(height = 0.3) text("po Słońcu i Księżycu. Planeta", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 133.2458, 2.0]) linear_extrude(height = 0.3) text("skalista jak Ziemia, ale z gęstą", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 128.4833, 2.0]) linear_extrude(height = 0.3) text("atmosferą. Gęste chmury z kwasu", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 123.7208, 2.0]) linear_extrude(height = 0.3) text("siarkowego i dwutlenku siarki", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 118.9583, 2.0]) linear_extrude(height = 0.3) text("pochłaniają praktycznie całe światło", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 114.1958, 2.0]) linear_extrude(height = 0.3) text("słoneczne, a pogactwo dwutlenku węgla", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 109.4333, 2.0]) linear_extrude(height = 0.3) text("generuje potężny efekt cieplarniany.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 104.6708, 2.0]) linear_extrude(height = 0.3) text("Powierzchnia jest spowita mrokiem", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 99.9083, 2.0]) linear_extrude(height = 0.3) text("i rozgrzana do 464°C. Ciśnienie", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 95.1458, 2.0]) linear_extrude(height = 0.3) text("atmosferyczne jest 90 razy większe", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 90.3833, 2.0]) linear_extrude(height = 0.3) text("niż na Ziemi.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("Średnica:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([41.0000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("12 104 km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 74.1556, 2.0]) linear_extrude(height = 0.3) text("Masa:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([30.2000, 74.1556, 2.0]) linear_extrude(height = 0.3) text("81% masy Ziemi", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 69.3931, 2.0]) linear_extrude(height = 0.3) text("Odległość od Słońca:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([70.7000, 69.3931, 2.0]) linear_extrude(height = 0.3) text("108 mln km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 64.6306, 2.0]) linear_extrude(height = 0.3) text("Temperatura powierzchni:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([81.5000, 64.6306, 2.0]) linear_extrude(height = 0.3) text("~464°C", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 133.2458, 2.0]) linear_extrude(height = 0.3) text("skalista jak Ziemia, spowita gęstymi", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 128.4833, 2.0]) linear_extrude(height = 0.3) text("chmurami kwasu siarkowego. Silny", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 123.7208, 2.0]) linear_extrude(height = 0.3) text("efekt cieplarniany rozgrzewa", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 118.9583, 2.0]) linear_extrude(height = 0.3) text("powierzchnię do 464°C, a ciśnienie", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 114.1958, 2.0]) linear_extrude(height = 0.3) text("atmosferyczne jest 90 razy większe", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 109.4333, 2.0]) linear_extrude(height = 0.3) text("niż na Ziemi.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 97.9681, 2.0]) linear_extrude(height = 0.3) text("Średnica:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
+        translate([41.0000, 97.9681, 2.0]) linear_extrude(height = 0.3) text("12 104 km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 93.2056, 2.0]) linear_extrude(height = 0.3) text("Masa:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
+        translate([30.2000, 93.2056, 2.0]) linear_extrude(height = 0.3) text("81% masy Ziemi", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("Odległość od Słońca:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
+        translate([70.7000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("108 mln km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("Temperatura powierzchni:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
+        translate([81.5000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("~464°C", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[20.0000, 77.4590], [16.7000, 77.4590], [16.7000, 78.0714], [14.0000, 76.9778], [16.7000, 75.8842], [16.7000, 76.4966], [20.0000, 76.4966]]);
+        translate([22.5000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("Merkury, 5 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[14.0000, 72.6965], [17.3000, 72.6965], [17.3000, 73.3089], [20.0000, 72.2153], [17.3000, 71.1217], [17.3000, 71.7341], [14.0000, 71.7341]]);
+        translate([22.5000, 74.1556, 2.0]) linear_extrude(height = 0.3) text("Ziemia, 4 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
     }
 }
 

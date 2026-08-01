@@ -404,7 +404,7 @@ module body_text() {
     color(color_black) {
         translate([14.0000, 156.0000, 2.0]) linear_extrude(height = 0.3) text("♄", size = 9.8778, font = "Liberation Sans:style=Bold", halign = "left", valign = "top");
         translate([23.4083, 156.0000, 2.0]) linear_extrude(height = 0.3) text("Saturn", size = 5.6444, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
-        translate([14.0000, 147.5333, 2.0]) linear_extrude(height = 0.3) text("Druga co do wielkości planeta i gazowy", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 147.5333, 2.0]) linear_extrude(height = 0.3) text("Druga co wielkości planeta i gazowy", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 142.7708, 2.0]) linear_extrude(height = 0.3) text("olbrzym znany od starożytności.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 138.0083, 2.0]) linear_extrude(height = 0.3) text("Słynie z widocznego systemu", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 133.2458, 2.0]) linear_extrude(height = 0.3) text("pierścieni - jedynego tak", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
@@ -423,6 +423,10 @@ module body_text() {
         translate([14.0000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("Okres orbitalny:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
         translate([59.9000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("29 lat 5 miesięcy", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 74.1556, 2.0]) linear_extrude(height = 0.3) text("12 dni", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[14.0000, 67.9340], [17.3000, 67.9340], [17.3000, 68.5464], [20.0000, 67.4528], [17.3000, 66.3592], [17.3000, 66.9716], [14.0000, 66.9716]]);
+        translate([22.5000, 69.3931, 2.0]) linear_extrude(height = 0.3) text("Jowisz, 66 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[20.0000, 63.1715], [16.7000, 63.1715], [16.7000, 63.7839], [14.0000, 62.6903], [16.7000, 61.5967], [16.7000, 62.2091], [20.0000, 62.2091]]);
+        translate([22.5000, 64.6306, 2.0]) linear_extrude(height = 0.3) text("Uran, 140 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
     }
 }
 

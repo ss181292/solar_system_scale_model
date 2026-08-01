@@ -456,6 +456,8 @@ module body_text() {
         translate([30.2000, 107.4931, 2.0]) linear_extrude(height = 0.3) text("333 tysiące mas Ziemi", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 102.7306, 2.0]) linear_extrude(height = 0.3) text("Temperatura powierzchni:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
         translate([81.5000, 102.7306, 2.0]) linear_extrude(height = 0.3) text("~5 772 K", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[14.0000, 96.5090], [17.3000, 96.5090], [17.3000, 97.1214], [20.0000, 96.0278], [17.3000, 94.9342], [17.3000, 95.5466], [14.0000, 95.5466]]);
+        translate([22.5000, 97.9681, 2.0]) linear_extrude(height = 0.3) text("Merkury, 6 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
     }
 }
 

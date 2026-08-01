@@ -421,6 +421,10 @@ module body_text() {
         translate([14.0000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("Największe obiekty:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
         translate([68.0000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("Ceres, Westa,", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 74.1556, 2.0]) linear_extrude(height = 0.3) text("Pallas, Hygiea", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[20.0000, 67.9340], [16.7000, 67.9340], [16.7000, 68.5464], [14.0000, 67.4528], [16.7000, 66.3592], [16.7000, 66.9716], [20.0000, 66.9716]]);
+        translate([22.5000, 69.3931, 2.0]) linear_extrude(height = 0.3) text("Mars, 19 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[14.0000, 63.1715], [17.3000, 63.1715], [17.3000, 63.7839], [20.0000, 62.6903], [17.3000, 61.5967], [17.3000, 62.2091], [14.0000, 62.2091]]);
+        translate([22.5000, 64.6306, 2.0]) linear_extrude(height = 0.3) text("Jowisz, 36 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
     }
 }
 

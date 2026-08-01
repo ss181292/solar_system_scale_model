@@ -4,4 +4,5 @@ Nasza gwiazda, wokół której krąży Ziemia i&nbsp;wszystkie planety Układu S
 
 **Średnica:** 1 391 000 km  
 **Masa:** 333 tysiące mas Ziemi  
-**Temperatura powierzchni:** ~5 772 K
+**Temperatura powierzchni:** ~5 772 K  
+**Na zachód:** Merkury, 6 m

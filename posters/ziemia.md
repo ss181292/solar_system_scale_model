@@ -5,4 +5,6 @@ Nasza planeta i&nbsp;jedyne znane miejsce na&nbsp;którym występuje życie. Naj
 **Średnica:** 12 756 km  
 **Masa:** 5 972 trylionów ton  
 **Odległość od Słońca:** 149,6 mln km  
-**Okres orbitalny:** 365 dni 6 godzin
+**Okres orbitalny:** 365 dni 6 godzin  
+**Na wschód:** Wenus, 4 m  
+**Na zachód:** Mars, 8 m

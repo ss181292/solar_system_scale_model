@@ -444,23 +444,20 @@ module body_text() {
     color(color_black) {
         translate([14.0000, 156.0000, 2.0]) linear_extrude(height = 0.3) text("Obrzeża Układu Słonecznego", size = 5.6444, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
         translate([14.0000, 147.5333, 2.0]) linear_extrude(height = 0.3) text("Poza orbitą Neptuna zaczynają się", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 142.7708, 2.0]) linear_extrude(height = 0.3) text("obrzeża Układu Słonecznego.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 138.0083, 2.0]) linear_extrude(height = 0.3) text("Znajdujące tu obiekty nazywamy", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 133.2458, 2.0]) linear_extrude(height = 0.3) text("obuektami transneptunowymi.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 128.4833, 2.0]) linear_extrude(height = 0.3) text("Wyszczególniamy tu dwa główne obszary", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 123.7208, 2.0]) linear_extrude(height = 0.3) text("- Pas Kuipera i Dysk Rozproszony.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 118.9583, 2.0]) linear_extrude(height = 0.3) text("Znanych jest ponad 5000 obiektów", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 114.1958, 2.0]) linear_extrude(height = 0.3) text("transneptunowych w tym 8 planet", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 109.4333, 2.0]) linear_extrude(height = 0.3) text("karłowatych: Pluton, Eris, Haumea,", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 104.6708, 2.0]) linear_extrude(height = 0.3) text("Makemake, Gonggong, Quaoar, Orcus", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 99.9083, 2.0]) linear_extrude(height = 0.3) text("i Sedna. Najdalsze obiekty krążą", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 95.1458, 2.0]) linear_extrude(height = 0.3) text("na orbitach kilku tysięcy AU, tj.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 90.3833, 2.0]) linear_extrude(height = 0.3) text("setek miliardów kilometrów od Słońca.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("W tej skali, aby dojść do najdalszych", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 74.1556, 2.0]) linear_extrude(height = 0.3) text("znanych planetoid należałoby iść", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 69.3931, 2.0]) linear_extrude(height = 0.3) text("ponad 30 kilometrów, a najbliższa", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 64.6306, 2.0]) linear_extrude(height = 0.3) text("gwiazda musiałaby znajdować się", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
-        translate([14.0000, 59.8681, 2.0]) linear_extrude(height = 0.3) text("na Grenlandii.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 142.7708, 2.0]) linear_extrude(height = 0.3) text("obrzeża Układu Słonecznego - obszar", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 138.0083, 2.0]) linear_extrude(height = 0.3) text("obiektów transneptunowych, głównie", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 133.2458, 2.0]) linear_extrude(height = 0.3) text("w Pasie Kuipera i Dysku Rozproszonym.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 128.4833, 2.0]) linear_extrude(height = 0.3) text("Znamy ponad 5000 takich obiektów,", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 123.7208, 2.0]) linear_extrude(height = 0.3) text("w tym 8 planet karłowatych: Pluton,", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 118.9583, 2.0]) linear_extrude(height = 0.3) text("Eris, Haumea, Makemake, Gonggong,", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 114.1958, 2.0]) linear_extrude(height = 0.3) text("Quaoar, Orcus i Sedna. Najdalsze", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 109.4333, 2.0]) linear_extrude(height = 0.3) text("krążą tysiące AU od Słońca.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 97.9681, 2.0]) linear_extrude(height = 0.3) text("W tej skali do najdalszych znanych", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 93.2056, 2.0]) linear_extrude(height = 0.3) text("planetoid trzeba by iść ponad 30 km,", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("a najbliższa gwiazda leżałaby aż", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([14.0000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("na Grenlandii.", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[14.0000, 70.7562], [17.3000, 70.7562], [17.3000, 71.3686], [20.0000, 70.2750], [17.3000, 69.1814], [17.3000, 69.7938], [14.0000, 69.7938]]);
+        translate([22.5000, 72.2153, 2.0]) linear_extrude(height = 0.3) text("Neptun, 5 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
     }
 }
 

@@ -420,6 +420,10 @@ module body_text() {
         translate([70.7000, 93.2056, 2.0]) linear_extrude(height = 0.3) text("59 mln km", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
         translate([14.0000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("Okres orbitalny:", size = 3.5278, font = "Baloo 2:style=Bold", halign = "left", valign = "top");
         translate([59.9000, 88.4431, 2.0]) linear_extrude(height = 0.3) text("87 dni 23 godziny", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[20.0000, 82.2215], [16.7000, 82.2215], [16.7000, 82.8339], [14.0000, 81.7403], [16.7000, 80.6467], [16.7000, 81.2591], [20.0000, 81.2591]]);
+        translate([22.5000, 83.6806, 2.0]) linear_extrude(height = 0.3) text("Słońce, 6 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
+        translate([0, 0, 2.0]) linear_extrude(height = 0.3) polygon(points = [[14.0000, 77.4590], [17.3000, 77.4590], [17.3000, 78.0714], [20.0000, 76.9778], [17.3000, 75.8842], [17.3000, 76.4966], [14.0000, 76.4966]]);
+        translate([22.5000, 78.9181, 2.0]) linear_extrude(height = 0.3) text("Wenus, 5 m", size = 3.5278, font = "Baloo 2", halign = "left", valign = "top");
     }
 }
 

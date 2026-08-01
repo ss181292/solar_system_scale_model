@@ -80,6 +80,24 @@ QR_LEFT     = QR_RIGHT - QR_SIZE           # lewa krawędź QR
 
 ASTRO_SYMBOLS = '☉☿♀♁♂♃♄♅♆♇⊳'
 
+# ── Strzałki „na wschód” / „na zachód” ──────────────────────────────────────
+# Tabliczki zwrócone frontem na południe: wschód = strzałka w prawo, zachód = w lewo.
+# Pozostałe (zwrócone frontem na północ): odwrotnie.
+SOUTH_FACING_POSTERS = {'saturn', 'uran', 'neptun', 'obrzeza_ukladu'}
+
+ARROW_LABELS   = {'Na wschód:': 'wschód', 'Na zachód:': 'zachód'}
+ARROW_W        = 6.0    # szerokość ikony strzałki [mm]
+ARROW_GAP      = 2.5    # odstęp między strzałką a tekstem wartości [mm]
+ARROW_H_FRAC   = 0.62   # wysokość grota względem BODY_MM
+ARROW_HEAD_FRAC = 0.55  # udział grotu w szerokości strzałki
+ARROW_SHAFT_FRAC = 0.22 # grubość trzonu względem wysokości grota
+
+def arrow_direction(poster_name, keyword):
+    south = poster_name in SOUTH_FACING_POSTERS
+    if keyword == 'wschód':
+        return 'right' if south else 'left'
+    return 'left' if south else 'right'
+
 HTML_ENTITIES = {
     '&#x2609;': '☉', '&#x263F;': '☿', '&#x2640;': '♀', '&#x2641;': '♁',
     '&#x2642;': '♂', '&#x2643;': '♃', '&#x2644;': '♄', '&#x2645;': '♅',
@@ -282,6 +300,36 @@ def emit_text(x, y, text, font, size_mm, halign='left', valign='top'):
         f'font = "{font}", halign = "{halign}", valign = "{valign}");'
     )
 
+def emit_arrow(x, y, direction):
+    """Rysuje ikonę strzałki (blokowy kształt) zamiast tekstu 'Na wschód:'/'Na zachód:'.
+    (x, y) to lewy górny róg obszaru zajmowanego normalnie przez tekst (jak w emit_text)."""
+    h = BODY_MM * ARROW_H_FRAC
+    w_ = ARROW_W
+    shaft = h * ARROW_SHAFT_FRAC
+    head_x = w_ * ARROW_HEAD_FRAC
+    mid_y = y - BODY_MM * 0.55
+
+    if direction == 'right':
+        pts = [
+            (x,          mid_y + shaft), (x + head_x, mid_y + shaft),
+            (x + head_x, mid_y + h / 2), (x + w_,     mid_y),
+            (x + head_x, mid_y - h / 2), (x + head_x, mid_y - shaft),
+            (x,          mid_y - shaft),
+        ]
+    else:
+        pts = [
+            (x + w_,          mid_y + shaft), (x + w_ - head_x, mid_y + shaft),
+            (x + w_ - head_x, mid_y + h / 2),  (x,               mid_y),
+            (x + w_ - head_x, mid_y - h / 2),  (x + w_ - head_x, mid_y - shaft),
+            (x + w_,          mid_y - shaft),
+        ]
+    pts_str = ', '.join(f'[{mm(px)}, {mm(py)}]' for px, py in pts)
+    return (
+        f'translate([0, 0, {PLAQUE_T}]) '
+        f'linear_extrude(height = {RAISE}) '
+        f'polygon(points = [{pts_str}]);'
+    )
+
 def generate_scad(name):
     md_path  = os.path.join(SCRIPT_DIR, f'{name}.md')
     png_path = os.path.join(SCRIPT_DIR, f'{name}.png')
@@ -426,9 +474,15 @@ def generate_scad(name):
             continue
         ly = line_ys[i]
         x = LEFT
-        for (frag_text, is_bold) in line_frags:
-            if not frag_text.strip('  '):
+        for j, (frag_text, is_bold) in enumerate(line_frags):
+            if not frag_text.strip('\xa0 '):
                 x += char_w(is_bold)
+                continue
+            norm = frag_text.replace('\xa0', ' ').strip()
+            if j == 0 and is_bold and norm in ARROW_LABELS:
+                direction = arrow_direction(name, ARROW_LABELS[norm])
+                w(f'        {emit_arrow(x, ly, direction)}')
+                x += ARROW_W + ARROW_GAP
                 continue
             font = BOLD_FONT if is_bold else MAIN_FONT
             w(f'        {emit_text(x, ly, frag_text, font, BODY_MM)}')

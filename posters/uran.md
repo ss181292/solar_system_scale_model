@@ -5,4 +5,6 @@ Siódma planeta Układu Słonecznego i&nbsp;gazowy olbrzym odkryty dopiero w 178
 **Średnica:** 50 724 km  
 **Masa:** 14,5 mas Ziemi  
 **Odległość od Słońca:** 2,8 miliarda km  
-**Okres orbitalny:** 84 lata
+**Okres orbitalny:** 84 lata  
+**Na wschód:** Saturn, 140 m  
+**Na zachód:** Neptun, 160 m

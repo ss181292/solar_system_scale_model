@@ -5,4 +5,6 @@ Czwarta od Słońca planeta Układu Słonecznego. Czerwona ze&nbsp;względu na&n
 **Średnica:** 6 779 km  
 **Masa:** 11% masy Ziemi  
 **Odległość od Słońca:** 230 mln km  
-**Okres orbitalny:** 1 rok 322 dni
+**Okres orbitalny:** 1 rok 322 dni  
+**Na wschód:** Ziemia, 8 m  
+**Na zachód:** Pas Planetoid, 19 m
