@@ -1,6 +1,6 @@
 # Pas Planetoid
 
-Region pełen asteroidów między orbitami Marsa a&nbsp;Jowisza zawierający miliony mniejszych ciał niebieskich. Powstał z&nbsp;pozostałości materii, z&nbsp;której formował się Układ Słoneczny. Grawitacja Jowisza przeszkadzała asteroidom w&nbsp;łączeniu się w&nbsp;jedną planetę. Największym obiektem jest planeta karłowata Ceres.
+Region pełen asteroidów między orbitami Marsa a&nbsp;Jowisza, zawierający miliony mniejszych ciał niebieskich. Powstał z&nbsp;pozostałości materii, z&nbsp;której formował się Układ Słoneczny. Grawitacja Jowisza przeszkadzała asteroidom w&nbsp;łączeniu się w&nbsp;jedną planetę. Największym obiektem jest planeta karłowata Ceres.
 
 **Liczba znanych obiektów:** ponad 1 milion  
 **Całkowita masa:** ~3% masy Księżyca  
